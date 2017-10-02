@@ -1,3 +1,60 @@
 body {
-	background: blue;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+article {
+  background: #222;
+  margin: 1em;
+  min-height: 15em;
+  color: #CCC;
+  padding: 1em;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  height: 100vh;
+  background: #222;
+  border-bottom: 1px solid white;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 10em;
+  margin: 1em;
+  border: 1px solid black;
+  border-radius: 100%;
+}
+
+.intro {
+  max-width: 750px;
+  margin: auto;
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+
+}
+
+.social-media-icons {
+  text-align: center;
+}
+
+.fa {
+  margin-right: .25em;
+}
+
+@media (max-width: 640px) {
+  .intro-content {
+    flex-flow: column wrap;
+  }
 }
