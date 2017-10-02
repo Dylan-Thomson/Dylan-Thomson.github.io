@@ -4,8 +4,7 @@ body {
 }
 
 h1 {
-  text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
 }
 
 article {
@@ -28,8 +27,7 @@ section {
 
 .profile-photo {
   width: 10em;
-  margin: 1em;
-  border: 1px solid black;
+  height: 10em;
   border-radius: 100%;
 }
 
@@ -42,7 +40,10 @@ section {
   display: flex;
   align-items: center;
   flex-flow: row;
+}
 
+.intro-text {
+  margin: 2em;
 }
 
 .social-media-icons {
@@ -50,7 +51,17 @@ section {
 }
 
 .fa {
-  margin-right: .25em;
+  margin: .15em;
+}
+
+.social-media-icons a {
+  text-decoration: none;
+  color: #CCC;
+  transition: color 0.5s ease;
+}
+
+.social-media-icons a:hover {
+  color: teal;
 }
 
 @media (max-width: 640px) {
