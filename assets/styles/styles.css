@@ -29,6 +29,7 @@ section {
   width: 10em;
   height: 10em;
   border-radius: 100%;
+  margin: 0em 2em;
 }
 
 .intro {
@@ -43,7 +44,10 @@ section {
 }
 
 .intro-text {
-  margin: 2em;
+  margin: 2em 0;
+  background: #111;
+  padding: 1em;
+  border-radius: 1em;
 }
 
 .social-media-icons {
@@ -51,7 +55,7 @@ section {
 }
 
 .fa {
-  margin: .15em;
+  margin: .25em;
 }
 
 .social-media-icons a {
