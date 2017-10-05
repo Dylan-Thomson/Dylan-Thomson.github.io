@@ -12,6 +12,11 @@ body {
 h1, h2, h3 {
   font-family: 'Arvo', serif;
   font-size: 2em;
+  margin: .5em 0;
+}
+
+h1 span {
+  font-size: .75em;
 }
 
 article {
@@ -46,17 +51,6 @@ section:nth-child(2n){
   flex-flow: row;
 }
 
-.intro-text {
-  margin: 2em 0;
-}
-
-.see-more {
-  align-self: flex-end;
-  text-align: center;
-  margin: 0 auto;
-  width: 100%;
-}
-
 .skills {
   display: flex;  
   align-items: center;
@@ -87,8 +81,8 @@ a:hover {
   color: #34DFC7;
 }
 
-.see-more p {
-  margin: 0;
+.learn-more {
+  /*font-family: 'Arvo', serif;*/
 }
 
 @media (max-width: 640px) {
@@ -98,6 +92,7 @@ a:hover {
 
   h1 {
     text-align: center; 
+    font-size: 1.5em;
   }
 
   .intro {
@@ -105,8 +100,7 @@ a:hover {
   }
 
   .intro-text {
-    margin: 0;
-    text-align: center;
+    margin: 0 2em;
   }
 
   .skills-content {
@@ -117,12 +111,12 @@ a:hover {
     text-align: center;
   }
 
-  .profile-photo {
+/*  .profile-photo {
     height: 5em;
     width: 5em;
-  }
+  }*/
 
-  .see-more {
-    display: none;
+  .learn-more {
+    text-align: center;
   }
 }
