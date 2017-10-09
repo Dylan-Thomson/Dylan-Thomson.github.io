@@ -66,9 +66,10 @@ section:nth-child(2n){
 
 .intro-text {
   margin: 1em;
-  background: #10284C; 
-  /*color: #38789B;*/
-  border: .15em solid #F1F2ED;
+  background: #F1F2ED; 
+  color: #10284C;
+  border-right: .1em solid #10284C;
+  border-bottom: .1em solid #10284C;
   padding: .5em 1.5em;
   border-radius: 1em;
 }
@@ -93,19 +94,39 @@ a .fa {
   margin: .25em;
 }
 
-a {
+.social-media-icons a {
   text-decoration: none;
   color: #F1F2ED;
   transition: color 0.5s ease;
 }
 
-a:hover {
+.social-media-icons a:hover {
   color: #34DFC7;
 }
 
-  .learn-more {
-    text-align: center;
-  }
+.learn-more-container {
+  text-align: center;
+}
+
+.learn-more {
+  display: inline-block;
+  margin: 1em auto;
+  padding: .5em;
+  text-align: center;
+
+  text-decoration: none;
+  color: #F1F2ED;
+  background: #10284C;
+  /*border: 1px solid #10284C;*/
+  border-radius: 1em;
+
+  transition: color 0.5s ease;
+  transition: background 0.5s ease;
+}
+.learn-more:hover {
+  background: #34DFC7;
+  /*color: #10284C;*/
+}
 
 @media (max-width: 640px) {
   a:hover {
