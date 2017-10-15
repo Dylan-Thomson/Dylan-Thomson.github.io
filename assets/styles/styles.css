@@ -120,12 +120,15 @@ a .fa {
   /*border: 1px solid #10284C;*/
   border-radius: 1em;
 
-  transition: color 0.5s ease;
-  transition: background 0.5s ease;
+  width: 10em;
+  /*transition: width 1.0s ease, border-radius 1.0s ease;*/
+  transition: border-radius 1.0s ease, background 1.0s ease;
+  /*transition: background 0.5s ease;*/
 }
 .learn-more:hover {
-  background: #34DFC7;
-  /*color: #10284C;*/
+  /*width: 15em;*/
+  border-radius: 0em;
+  background: #38789B;
 }
 
 @media (max-width: 640px) {
