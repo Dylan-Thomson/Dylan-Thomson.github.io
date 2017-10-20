@@ -1,8 +1,84 @@
+article {
+  margin: 0em auto;
+}
+
+body {
+  margin: 0;
+}
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 100vh;
+  align-items: center;
+}
+
+.profile-photo {
+  width: 10em;
+  height: 10em;
+  border-radius: 100%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  flex-flow: row;
+  margin: .5em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
+@media (max-width: 640px) {
+
+}
+
+/*.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.one {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  background: blue;
+}
+.two { 
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+  background: red;
+}
+.three {
+  grid-column: 1;
+  grid-row: 2 / 5;
+  background: green;
+}
+.four {
+  grid-column: 3;
+  grid-row: 3;
+  background: yellow;
+}
+.five {
+  grid-column: 2;
+  grid-row: 4;
+  background: purple;
+}
+.six {
+  grid-column: 3;
+  grid-row: 4;
+  background: orange;
+}
+*/
+
 /*F1F2ED
 34DFC7
 38789B
 88848A
 10284C*/
+/*
 body {
   margin: 0;
   font-family: 'PT Sans', sans-serif;
@@ -41,10 +117,8 @@ section:nth-child(2n){
 .profile-photo {
   width: 10em;
   height: 10em;
-  /*border-top: 0;*/
   border-right: .1em solid #10284C;
   border-bottom: .1em solid #10284C;
-  /*border: .15em solid #10284C;*/
   border-radius: 1em;
   margin: 1em;
 }
@@ -53,15 +127,6 @@ section:nth-child(2n){
   display: flex;
   align-items: center;
   flex-flow: row;
-}
-
-.intro-header {
-  /*background: #34DFC7;  */
-  /*color: #38789B;*/
-/*  background: #10284C;
-  border: .25em solid #F1F2ED;
-  border-radius: 1em;
-  padding: .25em;*/
 }
 
 .intro-text {
@@ -97,7 +162,7 @@ a .fa {
 .social-media-icons a {
   text-decoration: none;
   color: #F1F2ED;
-  transition: color 0.5s ease;
+  transition: color 1.0s ease;
 }
 
 .social-media-icons a:hover {
@@ -117,20 +182,16 @@ a .fa {
   text-decoration: none;
   color: #F1F2ED;
   background: #10284C;
-  /*border: 1px solid #10284C;*/
   border-radius: 1em;
 
   width: 10em;
-  /*transition: width 1.0s ease, border-radius 1.0s ease;*/
   transition: border-radius 1.0s ease, background 1.0s ease;
-  /*transition: background 0.5s ease;*/
 }
 .learn-more:hover {
-  /*width: 15em;*/
   border-radius: 0em;
   background: #38789B;
-}
-
+}*/
+/*
 @media (max-width: 640px) {
   a:hover {
     color: #F1F2ED;
@@ -166,3 +227,4 @@ a .fa {
     text-align: center;
   }
 }
+*/
