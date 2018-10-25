@@ -89,3 +89,8 @@ footer {
     flex-shrink: 0;
 }
 
+input {
+    display: block;
+    width: 100%;
+    /* margin: 1em; */
+}
