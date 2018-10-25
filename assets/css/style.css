@@ -1,18 +1,54 @@
 body {
     background-image: url("../images/background.png");
+    margin: 0;
 }
 
-nav, section {
+header {
     background: #ffffff;
+    border-bottom: 2px solid #cccccc;
+}
+
+.header-container {
+    width: 960px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    display: inline-block;
+    background: #4aaaa5;
+    color: #ffffff;
+    height: 100%;
+    margin: 0;
+    padding: 0.5em;
+}
+
+nav {
+    display: inline-block;
+    /* margin: 1em; */
+    /* justify-self: flex-end; */
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 1.25em;
 }
 
 section {
+    background: #ffffff;
     width: 960px;
-    margin: auto;
+    margin: 1em auto;
+    padding: 1em;
+}
+
+nav {
+    float: right;
 }
 
 footer {
     background: #666666;
+    text-align: center;
 }
 
 img {
