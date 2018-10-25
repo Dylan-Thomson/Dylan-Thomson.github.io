@@ -60,7 +60,7 @@ nav ul {
 
 main {
     flex: 1 0 auto;
-    font-size: 1.25em;
+    /* font-size: 1.25em; */
 }
 
 section {
