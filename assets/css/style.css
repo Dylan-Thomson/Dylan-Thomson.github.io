@@ -118,12 +118,22 @@ strong {
     font-weight: bold;
 }
 
+.line-through {
+    text-decoration: line-through;
+}
+
 
 /**********************************************  
     STYLES FOR INDEX.HTML (ABOUT ME)
 **********************************************/
 .about-me-container {
-    margin: 1em auto;
+    margin: 2em auto;
+    text-align: justify;
+    /* font-size: 1.15em; */
+}
+
+.about-me-container p {
+    line-height: 1.5em;
 }
 
 #profile-img {
