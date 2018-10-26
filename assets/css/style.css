@@ -174,9 +174,10 @@ input[type="submit"]:hover {
     margin: 1em;
     background: #cccccc;
     position: relative;
+    /* border: 2px solid #4aaaa5; */
 }
 
-.portfolio-link {
+.portfolio-link, .portfolio-link:visited {
     display: block;
     width: 160px;
     position: absolute;
@@ -185,11 +186,49 @@ input[type="submit"]:hover {
     margin: 10px auto;
     padding: 10px 20px;
     background: #4aaaa5;
+    /* background: rgba(74,170,165, 0.7); */
     color: #ffffff;
     text-decoration: none;
 }
 
 .portfolio-link:hover {
     background: #5c918e;
+    /* background: rgba(92,145,142, 0.7); */
     color: #cccccc;
+}
+
+#quote-machine {
+    background: url("../images/quotemachine.png");
+    background-position: center;
+    background-size: contain;
+}
+
+#wiki-viewer {
+    background: url("../images/wikiviewer.png");
+    background-position: center;
+    background-size: contain;
+}
+
+#twitch-line {
+    background: url("../images/twitchline.png");
+    background-position: center;
+    background-size: contain;
+}
+
+#pomodoro {
+    background: url("../images/pomodoro.png");
+    background-position: center;
+    background-size: contain;
+}
+
+#simon-game {
+    background: url("../images/simongame.png");
+    background-position: center;
+    background-size: contain;
+}
+
+#calculator {
+    background: url("../images/calculator.png");
+    background-position: center;
+    background-size: contain;
 }
