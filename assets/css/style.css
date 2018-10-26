@@ -152,6 +152,12 @@ input[type="submit"] {
     border: none;
 }
 
+input[type="submit"]:hover {
+    background: #5c918e;
+    color: #cccccc;
+    cursor: pointer;
+}
+
 /**********************************************  
     STYLES FOR PORTFOLIO.HTML
 **********************************************/
