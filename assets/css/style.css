@@ -34,6 +34,8 @@ h1, h2 {
 }
 
 h1 {
+    font-size: 2em;
+    font-weight: 600;
     display: inline-block;
     background: #4aaaa5;
     color: #ffffff;
@@ -64,11 +66,19 @@ nav ul {
 
 h2 {
     color: #4aaaa5;
+    font-size: 1.5em;
+    display: block;
+    margin: 1em 0;
+    font-weight: 600;
 }
 
 main {
     /* Sticky footer */
     flex: 1 0 auto;
+}
+
+p {
+    margin: 1em 0;
 }
 
 section {
@@ -102,6 +112,10 @@ footer a, footer a:visited {
 
 footer a:hover {
     color: #5c918e;
+}
+
+strong {
+    font-weight: bold;
 }
 
 
