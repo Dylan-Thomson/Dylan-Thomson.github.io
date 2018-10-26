@@ -89,11 +89,26 @@ footer {
     flex-shrink: 0;
 }
 
+footer a {
+    font-family: 'Georgia', Times, 'Times New Roman', serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a, footer a:visited {
+    color: #4aaaa5;
+}
+
+footer a:hover {
+    color: #5c918e;
+}
+
+
 /**********************************************  
     STYLES FOR INDEX.HTML (ABOUT ME)
 **********************************************/
 .about-me-container {
-    margin: 1em;
+    margin: 1em auto;
 }
 
 #profile-img {
@@ -106,7 +121,7 @@ footer {
     STYLES FOR CONTACT.HTML
 **********************************************/
 form {
-    margin: 1em;
+    margin: 1em auto;
 }
 
 input {
@@ -141,7 +156,7 @@ input[type="submit"] {
     STYLES FOR PORTFOLIO.HTML
 **********************************************/
 .portfolio-container {
-    margin: 1em;
+    margin: 1em auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -168,3 +183,7 @@ input[type="submit"] {
     text-decoration: none;
 }
 
+.portfolio-link:hover {
+    background: #5c918e;
+    color: #cccccc;
+}
