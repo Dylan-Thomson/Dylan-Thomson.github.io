@@ -1,61 +1,74 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en-us">
-    <head>
-        <title>Dylan Thomson | About</title>
-        <link rel="stylesheet" href="assets/css/reset.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-    </head>
-    <body>
-        <header>
-            <div class="header-container">
-                <h1>Dylan Thomson</h1>
-                <nav>
-                    <ul>
-                        <li class="nav-btn"><a href="index.html">About</a></li>
-                        <li class="nav-btn"><a href="portfolio.html">Portfolio</a></li>
-                        <li class="nav-btn"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dylan Thomson | About Me</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-light bg-light border-bottom border-secondary row text-center justify-content-center p-0">
+            <div class="col-md-auto p-0">
+                <h1 class="test bg-info text-light p-3 m-0">Dylan Thomson</h1>
             </div>
-        </header>
-        <main>
-            <section>
-                <header>
-                    <h2>About Me</h2>
-                </header>
-                <div class="about-me-container">
-                    <img id="profile-img" src="assets/images/profile.jpg" alt="Dylan Thomson">
-                    <p><strong>Hello! I'm Dylan, an aspiring web developer.</strong></p>
-                    <p>
-                        I've loved computers and all things nerdy ever since I first discovered games on the Super Nintendo at just four years old.
-                    </p>
-                    <p>
-                        My path to becoming a web developer has been an interesting one so far. 
-                        After graduating with a Bachelor's degree in CIS from Cleveland State University, 
-                        I began studying web development on my own using resources like FreeCodeCamp and Udemy.
-                    </p>
-                    <p>
-                        I recently enrolled in the CWRU Web Development Bootcamp in order to meet fellow coders
-                        and to push my studies to the next level.
-                    </p>
-                    <p>
-                        When I'm not busy coding or working at a retail pharmacy, I enjoy PC gaming, cooking/eating spicy food, and reading books on my Kindle. 
-                        Oh, and I'm friends with a <span class="line-through">nefarious</span> wonderful cat named Bwonsamdi.
-                    </p>
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ducimus, dignissimos quaerat amet, neque quis tempora mollitia itaque beatae deleniti, cum ea facere tenetur repellendus soluta reiciendis veritatis in est.</p> -->
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ducimus, dignissimos quaerat amet, neque quis tempora mollitia itaque beatae deleniti, cum ea facere tenetur repellendus soluta reiciendis veritatis in est.</p> -->
-                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ducimus, dignissimos quaerat amet, neque quis tempora mollitia itaque beatae deleniti, cum ea facere tenetur repellendus soluta reiciendis veritatis in est.</p> -->
+            <div class="col-md-4 p-0">
+                <ul class="navbar-nav flex-row justify-content-md-end justify-content-around">
+                    <li class="nav-item mx-md-3">
+                        <a class="nav-link active" href="index.html">About</a>
+                    </li>
+                    <li class="nav-item mx-md-3">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item mx-md-3">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div class="container-fluid pb-5">
+        <div class="row justify-content-center mt-md-3">
+            <div class="col-md-10 col-lg-8 col-xl-6 px-0 px-md-auto">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title text-info border-bottom border-secondary pb-2 mb-4">About Me</h2>
+                        <img class="img-fluid float-md-left border mb-md-3 mr-md-3 mx-auto d-block" src="assets/images/profile.jpg" alt="Dylan Thomson">
+                        <p class="card-text lead text-center">
+                            Hello! I'm Dylan, an aspiring web developer.
+                        </p>
+                        <p class="card-text">
+                            I've loved computers and all things nerdy ever since I first discovered games on the Super Nintendo at just four years old.
+                        </p>
+                        <p class="card-text">
+                            After graduating with a Bachelor's degree in CIS from Cleveland State University, 
+                            I began studying web development on my own using resources like FreeCodeCamp and Udemy.
+                        </p>
+                        <p class="card-text">
+                            I recently enrolled in the CWRU Web Development Bootcamp in order to meet fellow coders
+                            and to push my studies to the next level.
+                        </p>
+                        <p class="card-text">
+                            When I'm not busy coding or working at a retail pharmacy, I enjoy PC gaming, cooking/eating spicy food, and reading books on my Kindle. 
+                            Oh, and I'm friends with a <del>nefarious</del> wonderful cat named Bwonsamdi.
+                        </p>
+                    </div>
                 </div>
-            </section>
-        </main>
-        <footer>
-            <p>Copyright &copy;
-                <script>
-                  var d = new Date()
-                  document.write(d.getFullYear())
-                </script> 
-                <a href="https://github.com/Dylan-Thomson" target="_blank"> Dylan Thomson</a>
-              </p>
-        </footer>
-    </body>
+            </div>
+        </div>
+    </div>
+
+    <footer class="navbar nav-dark bg-dark fixed-bottom text-light border-top border-info">
+        <p class="text-center m-auto">Copyright &copy;
+            <script>
+              var d = new Date()
+              document.write(d.getFullYear())
+            </script> 
+            <a class="text-info" href="https://github.com/Dylan-Thomson" target="_blank"> Dylan Thomson</a>
+          </p>
+    </footer>
+    
+</body>
 </html>
