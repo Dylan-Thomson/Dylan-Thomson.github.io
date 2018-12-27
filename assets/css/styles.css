@@ -1,8 +1,12 @@
 :root {
-    --main-color: #086CA2;
-    --complimentary-color: #FF8B00;
+    --main-color: #0893C8;
+    --complimentary-color: #FF8500;
     --dark-color: #17181A;
     --light-color: white;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 section {
@@ -12,17 +16,14 @@ section {
 
 #home {
     background: var(--dark-color);
+    background: url(../images/footer_lodyas.png);
     color: var(--light-color);
+    animation: animatedBackground 15s ease-in-out infinite alternate;
 }
 
-#home-canvas {
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-}
-
-#home-content {
-    z-index: 1;
+@keyframes animatedBackground {
+	from { background-position: 0% 0%; }
+	to { background-position: 100% 0%; }
 }
 
 #about {
@@ -56,3 +57,21 @@ section {
     transform: rotate(90deg);
 }
 
+.navbar-custom {
+    background: var(--dark-color);
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
