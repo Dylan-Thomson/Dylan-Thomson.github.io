@@ -5,11 +5,34 @@
     --light-color: white;
 }
 
-#home {
+section {
     height: 100vh;
     width: 100vw;
+}
+
+#home {
     background: var(--dark-color);
+    /* background: linear-gradient(-45deg, var(--dark-color), #000000 );
+    background-size: 400% 400%;
+    animation: Gradient 15s ease infinite; */
+
     color: var(--light-color);
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 0%
+    }
+    50% {
+        background-position: 100% 75%
+    }
+    100% {
+        background-position: 0% 0%
+    }
+}
+
+#about {
+
 }
 
 .text-main {
@@ -19,7 +42,7 @@
 /* View Work Button */
 #btn-view-work {
     padding: 1em;
-    background: var(--dark-color);
+    background: none;
     border: 3px solid var(--light-color);
     color: var(--light-color);
     transition: all 0.3s ease-in-out;
