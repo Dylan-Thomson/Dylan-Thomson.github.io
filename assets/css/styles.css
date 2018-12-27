@@ -1,29 +1,33 @@
-/* body {
-    background: url("../images/qbkls.png");
-} */
+:root {
+    --main-color: #1455D6;
+    --complimentary-color: #FFA700;
+    --dark-color: #2a2d37;
+    --light-color: white;
+}
 
 #home {
     height: 100vh;
     width: 100vw;
-    background: #2a2d37;
-    color: white;
+    background: var(--dark-color);
+    color: var(--light-color);
 }
 
-.text-blue {
-    color: #1455D6;
+.text-main {
+    color: var(--main-color);
 }
 
+/* View Work Button */
 #btn-view-work {
     padding: 1em;
-    background: #2a2d37;
-    border: 3px solid white;
-    color: white;
+    background: var(--dark-color);
+    border: 3px solid var(--light-color);
+    color: var(--light-color);
     transition: all 0.3s ease-in-out;
 }
 
 #btn-view-work:hover {
-    background: #FFA700;
-    border: 3px solid #FFA700;
+    background: var(--complimentary-color);
+    border: 3px solid var(--complimentary-color);
 }
 
 #btn-view-work i {
