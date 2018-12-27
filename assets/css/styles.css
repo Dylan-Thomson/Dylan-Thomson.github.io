@@ -1,7 +1,7 @@
 :root {
-    --main-color: #1455D6;
-    --complimentary-color: #FFA700;
-    --dark-color: #2a2d37;
+    --main-color: #086CA2;
+    --complimentary-color: #FF8B00;
+    --dark-color: #17181A;
     --light-color: white;
 }
 
@@ -12,23 +12,10 @@ section {
 
 #home {
     background: var(--dark-color);
-    /* background: linear-gradient(-45deg, var(--dark-color), #000000 );
-    background-size: 400% 400%;
-    animation: Gradient 15s ease infinite; */
-
     color: var(--light-color);
 }
 
-@keyframes Gradient {
-    0% {
-        background-position: 0% 0%
-    }
-    50% {
-        background-position: 100% 75%
-    }
-    100% {
-        background-position: 0% 0%
-    }
+#home-content {
 }
 
 #about {
