@@ -87,3 +87,27 @@ section:not(:first-child) {
 .navbar-dark .navbar-nav .nav-item .nav-link:hover {
     color: var(--complimentary-color);
 }
+
+/* FOOTER */
+footer {
+    background: var(--gray-color);
+    color: var(--white-color);
+}
+
+#footer-links i {
+    background: var(--dark-color);
+    transition: all 0.2s ease-in-out;
+}
+
+#footer-links i:hover {
+    background: var(--main-color);
+}
+
+#footer-links a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+#copyright a {
+    color: var(--main-color);
+}
