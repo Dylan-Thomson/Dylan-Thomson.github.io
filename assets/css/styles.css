@@ -3,7 +3,8 @@
     --complimentary-color: #FF8500;
     --dark-color: #17181A;
     --gray-color: #343434;
-    --light-color: #dfdfdf;
+    --light-color: #f5f5f5;
+    --white-color: #fff;
 }
 
 body {
@@ -15,10 +16,18 @@ section {
     width: 100vw;
 }
 
+section:nth-child(even) {
+    background: var(--white-color);
+}
+
+section:nth-child(odd) {
+    background: var(--light-color);
+}
+
 #home {
     background: var(--gray-color);
     background: url(../images/footer_lodyas.png);
-    color: var(--light-color);
+    color: var(--white-color);
     animation: animatedBackground 15s ease-in-out infinite alternate;
 }
 
@@ -27,9 +36,9 @@ section {
 	to { background-position: 100% 0%; }
 }
 
-#about {
-    background: var(--light-color);
-}
+/* #about {
+    background: var(--white-color);
+} */
 
 .text-main {
     color: var(--main-color);
@@ -39,8 +48,8 @@ section {
 #btn-view-work {
     padding: 1em;
     background: none;
-    border: 3px solid var(--light-color);
-    color: var(--light-color);
+    border: 3px solid var(--white-color);
+    color: var(--white-color);
     transition: all 0.3s ease-in-out;
 }
 
@@ -65,7 +74,7 @@ section {
 
 .navbar-dark .navbar-nav .nav-item .nav-link {
     transition: all 0.3s ease-in-out;
-    color: var(--light-color)
+    color: var(--white-color)
 }
 
 .navbar-dark .navbar-nav .nav-item.active .nav-link {
