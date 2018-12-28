@@ -31,7 +31,7 @@ section:not(:first-child) {
 
 #home {
     background: var(--gray-color);
-    background: url(../images/footer_lodyas.png);
+    background-image: url(../images/footer_lodyas.png);
     color: var(--white-color);
     animation: animatedBackground 15s ease-in-out infinite alternate;
 }
