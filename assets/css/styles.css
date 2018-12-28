@@ -70,7 +70,7 @@ section:not(:first-child) {
 
 /* NAVBAR */
 .navbar {
-    border-bottom: 3px solid var(--main-color);
+    border-bottom: 4px solid var(--main-color);
     position: sticky;
     top: 0px;
 }
