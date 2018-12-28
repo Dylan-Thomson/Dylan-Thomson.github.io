@@ -2,16 +2,14 @@ $(document).ready(()=> {
 
     $("#btn-view-work").on("click", function(event) {
         event.preventDefault();
-        $('html, body').animate({
-            scrollTop: $("#about").offset().top
-        }, 500);
+        scrollPage("#about");
     });
 
-    $(".nav-link").on("click", function(event) {
+    $(".nav-item").on("click", function(event) {
         event.preventDefault();
-        $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 500);
+        $(".nav-item").removeClass("active");
+        $(this).addClass("active");
+        scrollPage($(this).children(".nav-link").attr("href"));
     });
     
     $(window).on("scroll", function() {
@@ -25,3 +23,10 @@ $(document).ready(()=> {
     });
 
 });
+
+// Animate scroll to section on page
+function scrollPage(href) {
+    $('html, body').animate({
+        scrollTop: $(href).offset().top
+    }, 300);
+}
