@@ -33,12 +33,12 @@ section:not(:first-child) {
     background: var(--gray-color);
     background-image: url(../images/footer_lodyas.png);
     color: var(--white-color);
-    animation: animatedBackground 15s ease-in-out infinite alternate;
+    animation: animatedBackground 30s ease-in-out infinite alternate;
 }
 
 @keyframes animatedBackground {
 	from { background-position: 0% 0%; }
-	to { background-position: 100% 0%; }
+	to { background-position: 500% 0%; }
 }
 
 .text-main {
