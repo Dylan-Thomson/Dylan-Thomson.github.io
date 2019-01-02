@@ -94,7 +94,7 @@ nav {
 }
 
 .progress-bar {
-    background: var(--complimentary-color) !important;
+    background: var(--main-color) !important;
 }
 
 #profile-img {
