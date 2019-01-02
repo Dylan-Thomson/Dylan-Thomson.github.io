@@ -29,6 +29,8 @@ section:not(:first-child) {
     padding-top: 59px;
 }
 
+
+/* HOME */
 #home {
     background: var(--gray-color);
     background-image: url(../images/footer_lodyas.png);
@@ -41,7 +43,7 @@ section:not(:first-child) {
 	to { background-position: 500% 0%; }
 }
 
-/* View Work Button */
+/* VIEW WORK BUTTON */
 #btn-view-work {
     padding: 1em;
     background: none;
@@ -87,6 +89,13 @@ nav {
     color: var(--complimentary-color);
 }
 
+/* ABOUT */
+#profile-img {
+    max-width: 15em;
+    /* border: 1px solid var(--gray-color);
+    border-radius: 10px; */
+}
+
 /* PROGRESS BARS */
 .progress {
     background: #ddd !important;
@@ -95,10 +104,6 @@ nav {
 
 .progress-bar {
     background: var(--main-color) !important;
-}
-
-#profile-img {
-    max-width: 15em;
 }
 
 
