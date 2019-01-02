@@ -45,6 +45,13 @@ section:not(:first-child) {
     color: var(--main-color);
 }
 
+.header-bar {
+    /* display: inline-block; */
+    width: 80px;
+    height: 5px;
+    background: var(--gray-color);
+}
+
 /* View Work Button */
 #btn-view-work {
     padding: 1em;
@@ -69,6 +76,9 @@ section:not(:first-child) {
 }
 
 /* NAVBAR */
+nav {
+   background-color: #17181A !important;
+}
 .navbar {
     border-bottom: 4px solid var(--main-color);
     position: sticky;
@@ -86,6 +96,24 @@ section:not(:first-child) {
 
 .navbar-dark .navbar-nav .nav-item .nav-link:hover {
     color: var(--complimentary-color);
+}
+
+/* PROGRESS BARS */
+.progress {
+    background: #ddd !important;
+    height: 2em;
+}
+
+.progress-bar {
+    background: var(--complimentary-color) !important;
+}
+
+#profile-img {
+    max-width: 15em;
+}
+
+.col-lg-6 {
+    position: initial !important;
 }
 
 /* FOOTER */
