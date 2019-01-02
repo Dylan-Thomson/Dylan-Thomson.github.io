@@ -45,13 +45,13 @@
             </div>
         </div>
     </nav>
-    <section id="about">
-        <h2 class="text-center display-4 mt-4">ABOUT</h2>
-        <div class="container my-4">
+    <section class="d-flex flex-column justify-content-between align-content-center" id="about">
+        <div class="container">
+            <h2 class="text-center display-4 my-4">ABOUT</h2>
             <div class="row">
                 <div class="col-lg-6 text-center">
                     <img class="img-fluid" id="profile-img" src="assets/images/profile.jpg" alt="Dylan Thomson">
-                    <h3>About Me</h3>
+                    <h3 class=>About Me</h3>
                     <p>I'm a web developer based in Northeast Ohio. I have a Bachelor's in Computer and Information Science from Cleveland State University, and am currently attending Case Western's Web Development Bootcamp.</p>
                 </div>
                 <div class="col-lg-6 text-center">
@@ -81,35 +81,38 @@
             </div>
         </div>
     </section>
-    <section id="portfolio">
-        <h2 class="text-center display-4 m-4">PORTFOLIO</h2>
+    <section class="d-flex flex-column justify-content-between align-content-center" id="portfolio">
+        <div class="container">
+            <h2 class="text-center display-4 m-4">PORTFOLIO</h2>
+        </div>
         
     </section>
-    <section id="contact">
+    <section class="d-flex flex-column justify-content-between align-content-center" id="contact">
+        <div class="container">
             <h2 class="text-center display-4 m-4">CONTACT ME</h2>
-
+        </div>
+        <footer class="p-4">
+            <div class="text-center my-3" id="footer-links">
+                <a href="https://www.linkedin.com/in/dylan-thomson-48097816b" target="_blank">
+                    <i class="p-3 mx-2 fab fa-lg fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Dylan-Thomson" target="_blank">
+                    <i class="p-3 mx-2 fab fa-lg fa-github"></i>
+                </a>
+                <a href="https://codepen.io/dylanjt/" target="_blank">
+                    <i class="p-3 mx-2 fab fa-lg fa-codepen"></i>
+                </a>
+            </div>
+            <p class="text-center" id="copyright">Copyright &copy;
+                <script>
+                    var d = new Date()
+                    document.write(d.getFullYear())
+                </script> 
+                <a href="https://github.com/Dylan-Thomson" target="_blank"> Dylan Thomson</a>
+            </p>
+        </footer>
     </section>
 
-    <footer class="p-4">
-        <div class="text-center my-3" id="footer-links">
-            <a href="https://www.linkedin.com/in/dylan-thomson-48097816b" target="_blank">
-                <i class="p-3 mx-2 fab fa-lg fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/Dylan-Thomson" target="_blank">
-                <i class="p-3 mx-2 fab fa-lg fa-github"></i>
-            </a>
-            <a href="https://codepen.io/dylanjt/" target="_blank">
-                <i class="p-3 mx-2 fab fa-lg fa-codepen"></i>
-            </a>
-        </div>
-        <p class="text-center" id="copyright">Copyright &copy;
-            <script>
-                var d = new Date()
-                document.write(d.getFullYear())
-            </script> 
-            <a href="https://github.com/Dylan-Thomson" target="_blank"> Dylan Thomson</a>
-        </p>
-    </footer>
 
     <!-- <div class="container-fluid">
         <nav class="navbar navbar-light bg-light border-bottom border-secondary row text-center justify-content-center p-0">
