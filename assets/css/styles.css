@@ -41,17 +41,6 @@ section:not(:first-child) {
 	to { background-position: 500% 0%; }
 }
 
-.text-main {
-    color: var(--main-color);
-}
-
-.header-bar {
-    /* display: inline-block; */
-    width: 80px;
-    height: 5px;
-    background: var(--gray-color);
-}
-
 /* View Work Button */
 #btn-view-work {
     padding: 1em;
@@ -77,7 +66,7 @@ section:not(:first-child) {
 
 /* NAVBAR */
 nav {
-   background-color: #17181A !important;
+    background-color: #17181A !important;
 }
 .navbar {
     border-bottom: 4px solid var(--main-color);
@@ -112,9 +101,6 @@ nav {
     max-width: 15em;
 }
 
-.col-lg-6 {
-    position: initial !important;
-}
 
 /* FOOTER */
 footer {
@@ -137,5 +123,14 @@ footer {
 }
 
 #copyright a {
+    color: var(--main-color);
+}
+
+/* GENERAL CLASSES */
+.col-lg-6 {
+    position: initial !important;
+}
+
+.text-main {
     color: var(--main-color);
 }
