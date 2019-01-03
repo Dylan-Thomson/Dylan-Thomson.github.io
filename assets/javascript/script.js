@@ -13,6 +13,10 @@ $(document).ready(()=> {
         $(this).addClass("active");
         scrollPage($(this).children(".nav-link").attr("href"));
     });
+
+    $(".btn-learn-more").on("click", function(event) {
+        $("#modal-learn-more").modal("show");
+    });
     
     $(window).on("scroll", function() {
         setNavLinkActive();

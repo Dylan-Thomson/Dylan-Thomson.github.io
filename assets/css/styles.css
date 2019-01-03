@@ -135,6 +135,21 @@ nav {
     color: var(--white-color);
 }
 
+.modal-link {
+    color: var(--white-color);
+    text-decoration: none;
+    
+    background: var(--complimentary-color);
+    border: 3px solid var(--complimentary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.modal-link:hover {
+    color: var(--complimentary-color);
+    text-decoration: none;
+    background: none;
+}
+
 /* FOOTER */
 footer {
     background: var(--gray-color);
