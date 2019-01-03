@@ -45,7 +45,6 @@ section:not(:first-child) {
 
 /* VIEW WORK BUTTON */
 #btn-view-work {
-    padding: 1em;
     background: none;
     border: 3px solid var(--white-color);
     color: var(--white-color);
@@ -69,6 +68,7 @@ section:not(:first-child) {
 /* NAVBAR */
 nav {
     background-color: #17181A !important;
+    z-index: 2;
 }
 .navbar {
     border-bottom: 4px solid var(--main-color);
@@ -92,8 +92,6 @@ nav {
 /* ABOUT */
 #profile-img {
     max-width: 15em;
-    /* border: 1px solid var(--gray-color);
-    border-radius: 10px; */
 }
 
 /* PROGRESS BARS */
@@ -106,6 +104,36 @@ nav {
     background: var(--main-color) !important;
 }
 
+/* PORTFOLIO */
+.card, .card-img {
+    border: none;
+    border-radius: 0;
+}
+.card-img-overlay {
+    opacity: 0;
+}
+.project .card-img, .project .card-img-overlay {
+    transition: all 0.5s ease-in-out;
+}
+
+.project:hover .card-img {
+    opacity: 0;
+}
+
+.project:hover .card-img-overlay {
+    opacity: 1;
+}
+
+.btn-learn-more {
+    background: inherit;
+    border: 3px solid var(--complimentary-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-learn-more:hover {
+    background: var(--complimentary-color);
+    color: var(--white-color);
+}
 
 /* FOOTER */
 footer {
@@ -131,9 +159,11 @@ footer {
     color: var(--main-color);
 }
 
+
 /* GENERAL CLASSES */
-.col-lg-6 {
-    position: initial !important;
+.px-0 {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .text-main {
