@@ -1,6 +1,7 @@
 $(document).ready(()=> {
 
     setNavLinkActive();
+    autoCollapse();
 
     $("#btn-view-work").on("click", function(event) {
         event.preventDefault();
@@ -24,6 +25,14 @@ $(document).ready(()=> {
     });
 
 });
+
+// When loading on small screens, clicking nav-link automatically collapses dropdown
+function autoCollapse() {
+    if($(window).width() < 992) {
+        $(".nav-link").attr("data-toggle", "collapse");
+        $(".nav-link").attr("data-target", ".navbar-collapse");
+    }
+}
 
 // Animate scroll to section on page
 function scrollPage(href) {
