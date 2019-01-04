@@ -192,6 +192,14 @@ footer a:hover {
     padding-left: 0;
 }
 
+.justify-self-center {
+    justify-self: center;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
 .text-primary {
     color: var(--main-color) !important;
 }
