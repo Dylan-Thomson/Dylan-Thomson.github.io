@@ -16,13 +16,13 @@
     <section class="d-flex flex-column justify-content-center align-content-center"  id="home">
         <div class="text-center mx-auto p-4" id="home-content">
             <h1>
-                Hi! I'm <span class="text-main">Dylan Thomson</span>.<br>
+                Hi! I'm <span class="text-primary">Dylan Thomson</span>.<br>
                 I'm a web developer.
             </h1>
             <button class="mx-auto my-2 p-3" id="btn-view-work">View my work <i class="fas fa-arrow-right"></i></button>
         </div>
     </section>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -45,7 +45,7 @@
             </div>
         </div>
     </nav>
-    <section class="d-flex flex-column justify-content-between align-content-center" id="about">
+    <section class="d-flex flex-column justify-content-between align-content-center bg-white" id="about">
         <div class="container">
             <h2 class="text-center display-4 my-4">ABOUT</h2>
             <div class="row py-4">
@@ -75,13 +75,16 @@
                         <div class="progress-bar px-4 text-left" role="progressbar" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Firebase</div>
                     </div>
                     <div class="progress m-2">
+                        <div class="progress-bar px-4 text-left" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Node.js</div>
+                    </div>
+                    <div class="progress m-2">
                         <div class="progress-bar px-4 text-left" role="progressbar" style="width: 70%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Git/Github</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="d-flex flex-column justify-content-between align-content-center" id="portfolio">
+    <section class="d-flex flex-column justify-content-between align-content-center bg-light" id="portfolio">
         <div class="container">
             <h2 class="text-center display-4 m-4">PROJECTS</h2>
             <div class="row pt-4 pb-md-4">
@@ -90,7 +93,7 @@
                         <img class="card-img" src="assets/images/tinfur.png" alt="TinFur">
                         <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
                             <h5 class="card-title">TinFur</h5>
-                            <p class="card-text text-comp">Group project</p>
+                            <p class="card-text text-secondary">Group project</p>
                             <button class="btn-learn-more w-50 mx-auto" data-project="tinfur">Learn More</button>
                         </div>
                     </div>
@@ -100,7 +103,7 @@
                         <img class="card-img" src="assets/images/rps.png" alt="Rock Paper Scissors">
                         <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
                             <h5 class="card-title">Rock Paper Scissors Multiplayer</h5>
-                            <p class="card-text text-comp">Online multiplayer using Firebase</p>
+                            <p class="card-text text-secondary">Online multiplayer using Firebase</p>
                             <button class="btn-learn-more w-50 mx-auto" data-project="rps">Learn More</button>
                         </div>
                     </div>
@@ -110,7 +113,7 @@
                         <img class="card-img" src="assets/images/giftastic.png" alt="Giftastic">
                         <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
                             <h5 class="card-title">GifTastic</h5>
-                            <p class="card-text text-comp">APIs and local storage</p>
+                            <p class="card-text text-secondary">APIs and local storage</p>
                             <button class="btn-learn-more w-50 mx-auto" data-project="giftastic">Learn More</button>
                         </div>
                     </div>
@@ -120,7 +123,7 @@
                         <img class="card-img" src="assets/images/rpg.png" alt="Overwatch RPG">
                         <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
                             <h5 class="card-title">Overwatch RPG</h5>
-                            <p class="card-text text-comp">jQuery</p>
+                            <p class="card-text text-secondary">jQuery</p>
                             <button class="btn-learn-more w-50 mx-auto" data-project="rpg">Learn More</button>
                         </div>
                     </div>
@@ -130,7 +133,7 @@
                         <img class="card-img" src="assets/images/triviagame.png" alt="Trivia Game">
                         <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
                             <h5 class="card-title">Trivia Game</h5>
-                            <p class="card-text text-comp">JavaScript</p>
+                            <p class="card-text text-secondary">JavaScript</p>
                             <button class="btn-learn-more w-50 mx-auto" data-project="trivia">Learn More</button>
                         </div>
                     </div>
@@ -140,7 +143,7 @@
                         <img class="card-img" src="assets/images/wordguess.png" alt="Word Guessing Game">
                         <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
                             <h5 class="card-title">Word Guessing Game</h5>
-                            <p class="card-text text-comp">JavaScript</p>
+                            <p class="card-text text-secondary">JavaScript</p>
                             <button class="btn-learn-more w-50 mx-auto" data-project="wordguess">Learn More</button>
                         </div>
                     </div>
@@ -148,6 +151,73 @@
                 
             </div>
         </div>
+    </section>
+    <section class="d-flex flex-column justify-content-between align-content-center" id="contact">
+        <div class="container">
+            <h2 class="text-center display-4 m-4">CONTACT</h2>
+            <div class="row py-4">
+                <div class="col-md-6 my-4">
+                    <h6 class="my-2">Have a question or want to work together?</h6>
+                    <p>The best ways to contact me are via email or through the LinkedIn link below. </p>
+                    <p>I am currently seeking a junior web developer position but am open to other software development opportunities as well!</p>
+                </div>
+                <div class="col-md-6 my-4">
+                    <h6 class="text-center my-2">How can you reach me?</h6>
+                    <ul class="list-unstyled text-center">
+                        <li>
+                            Phone: <a href="tel:440-479-8622">(440) 479-8622</a>
+                        </li>
+                        <li>
+                            Email: <a href="mailto:djthomson88@gmail.com">djthomson88@gmail.com</a>
+                        </li>
+                        <li>
+                            Resume: <a href="#">PDF</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col-md-4 mx-auto">
+                    <div class="my-4">
+                        <h6 class="my-2">Have a question or want to work together?</h6>
+                        <p>The best ways to contact me are via email or through the LinkedIn link below. </p>
+                        <p>I am currently seeking a junior web developer position but am open to other software development opportunities as well!</p>
+                        <ul class="list-unstyled text-center">
+                            <li>
+                                Phone: <a href="tel:440-479-8622">(440) 479-8622</a>
+                            </li>
+                            <li>
+                                Email: <a href="mailto:djthomson88@gmail.com">djthomson88@gmail.com</a>
+                            </li>
+                            <li>
+                                Resume: <a href="#">PDF</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        
+        <footer class="p-4 bg-dark">
+            <div class="text-center my-4" id="footer-links">
+                <a href="https://www.linkedin.com/in/dylan-thomson-48097816b" target="_blank">
+                    <i class="p-3 mx-2 fab fa-lg fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/Dylan-Thomson" target="_blank">
+                    <i class="p-3 mx-2 fab fa-lg fa-github"></i>
+                </a>
+                <a href="https://codepen.io/dylanjt/" target="_blank">
+                    <i class="p-3 mx-2 fab fa-lg fa-codepen"></i>
+                </a>
+            </div>
+            <p class="text-center" id="copyright">Copyright &copy;
+                <script>
+                    var d = new Date()
+                    document.write(d.getFullYear())
+                    </script> 
+                <a href="https://github.com/Dylan-Thomson" target="_blank"> Dylan Thomson</a>
+            </p>
+        </footer>
     </section>
 
     <div class="modal fade" id="modal-learn-more" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
@@ -172,31 +242,5 @@
             </div>
         </div>
     </div>
-
-    <section class="d-flex flex-column justify-content-between align-content-center" id="contact">
-        <div class="container">
-            <h2 class="text-center display-4 m-4">CONTACT</h2>
-        </div>
-        <footer class="p-4">
-            <div class="text-center my-3" id="footer-links">
-                <a href="https://www.linkedin.com/in/dylan-thomson-48097816b" target="_blank">
-                    <i class="p-3 mx-2 fab fa-lg fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/Dylan-Thomson" target="_blank">
-                    <i class="p-3 mx-2 fab fa-lg fa-github"></i>
-                </a>
-                <a href="https://codepen.io/dylanjt/" target="_blank">
-                    <i class="p-3 mx-2 fab fa-lg fa-codepen"></i>
-                </a>
-            </div>
-            <p class="text-center" id="copyright">Copyright &copy;
-                <script>
-                    var d = new Date()
-                    document.write(d.getFullYear())
-                </script> 
-                <a href="https://github.com/Dylan-Thomson" target="_blank"> Dylan Thomson</a>
-            </p>
-        </footer>
-    </section>
 </body>
 </html>
