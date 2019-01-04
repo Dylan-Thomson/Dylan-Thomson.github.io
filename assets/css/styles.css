@@ -220,3 +220,15 @@ footer a:hover {
     background: var(--dark-color) !important;
     color: var(--light-color) !important;
 }
+
+@media (max-width: 472px) {
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 387px) {
+    h1 {
+        font-size: 24px;
+    }
+}
