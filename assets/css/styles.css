@@ -99,6 +99,7 @@ nav {
 .card, .card-img {
     border: none;
     border-radius: 0;
+    background: none;
 }
 .card-img-overlay {
     opacity: 0;
