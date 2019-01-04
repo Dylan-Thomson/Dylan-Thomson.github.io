@@ -104,5 +104,26 @@ const projects = {
         description: "Try to guess what common web development acronyms mean by typing letters on the keyboard. Find every letter before running out of guesses to win! Built using vanilla JavaScript.",
         repoLink: "https://github.com/Dylan-Thomson/Word-Guess-Game",
         liveLink: "https://dylan-thomson.github.io/Word-Guess-Game/"
+    },
+    calculator: {
+        title: "Calculator",
+        subtitle: "Simple calculator app",
+        description: "An earlier project designed to behave like an old fashioned pocket calculator. I recently updated it to support operator precedence and plan to add more functions in the future.",
+        repoLink: "https://github.com/Dylan-Thomson/JavaScriptCalculator",
+        liveLink: "https://dylan-thomson.github.io/JavaScriptCalculator/"
+    },
+    simon: {
+        title: "Simon Game",
+        subtitle: "A memory game based on a classic toy",
+        description: "Another one of my earlier projects. Start a game and try to remember the sequence it gives you. On strict mode, mistakes are not forgiven.",
+        repoLink: "https://github.com/Dylan-Thomson/SimonGame",
+        liveLink: "https://dylan-thomson.github.io/SimonGame/"
+    },
+    pomodoro: {
+        title: "Pomodoro Timer",
+        subtitle: "A timer based on a popular time management technique",
+        description: "One of my earlier projects. Users can set work/break intervals and be notified when it's time to switch. User can enable/disable sounds/browser alerts.",
+        repoLink: "https://github.com/Dylan-Thomson/PomodoroClock",
+        liveLink: "https://dylan-thomson.github.io/PomodoroClock/"
     }
 }
