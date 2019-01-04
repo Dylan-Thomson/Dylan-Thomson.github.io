@@ -142,16 +142,16 @@ nav {
 
 /* CONTACT */
 #contact-submit {
-    color: var(--dark-color);
-    background: none;
+    color: var(--white-color);
+    background: var(--complimentary-color);
     border: 3px solid var(--complimentary-color);
     transition: all 0.3s ease-in-out;
 }
 
 #contact-submit:hover {
-    background: var(--complimentary-color);
+    background: none;
     text-decoration: none;
-    color: var(--white-color);
+    color: var(--complimentary-color);
 }
 
 /* FOOTER */
@@ -169,8 +169,20 @@ nav {
     text-decoration: none;
 }
 
-#copyright a {
+footer a {
     color: var(--main-color);
+    transition: all 0.15s ease-in-out;
+}
+
+footer a:hover {
+    color: var(--main-color);
+    opacity: 0.75;
+    /* text-decoration: none; */
+}
+
+.list-inline-item:not(:last-of-type) {
+    border-right: 1px solid var(--light-color);
+    padding-right: 1em;
 }
 
 
