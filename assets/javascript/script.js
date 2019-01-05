@@ -80,7 +80,7 @@ const projects = {
     giftastic: {
         title: "GifTastic",
         subtitle: "Search and favorite GIFs from GIPHY",
-        description: "Search for GIFs on GIPHY by category. The user can share these on Facebook/Twitter, and save them as favorites using local storage.",
+        description: "Search for GIFs on GIPHY by category. GIFs are loaded as still images, but will play/pause when clicked. The user can share these on Facebook/Twitter, and save them as favorites using local storage.",
         repoLink: "https://github.com/Dylan-Thomson/GifTastic",
         liveLink: "https://dylan-thomson.github.io/GifTastic/"
     },
