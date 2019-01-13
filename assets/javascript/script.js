@@ -57,7 +57,13 @@ function displayProjectModal(project) {
     $("#learn-more-subtitle").text(project.subtitle);
     $("#learn-more-description").text(project.description);
     $("#link-repo").attr("href", project.repoLink);
-    $("#link-live").attr("href", project.liveLink);
+    if(project.liveLink) {
+        $("#link-live").removeClass("d-none");
+        $("#link-live").attr("href", project.liveLink);
+    }
+    else {
+        $("#link-live").addClass("d-none");
+    }
 
     $("#modal-learn-more").modal("show");
 }
@@ -125,5 +131,11 @@ const projects = {
         description: "One of my earlier projects. Users can set work/break intervals and be notified when it's time to switch. User can enable/disable sounds/browser alerts.",
         repoLink: "https://github.com/Dylan-Thomson/PomodoroClock",
         liveLink: "https://dylan-thomson.github.io/PomodoroClock/"
+    },
+    liri: {
+        title: "LIRI",
+        subtitle: "CLI program built with Node.js",
+        description: "LIRI takes command line arguments and allows the user to search for information on songs, movies, and band concerts using a number of APIs and Node packages. Checkout the readme on GitHub for more information!",
+        repoLink: "https://github.com/Dylan-Thomson/liri"
     }
 }
