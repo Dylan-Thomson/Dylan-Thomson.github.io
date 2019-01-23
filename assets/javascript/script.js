@@ -135,7 +135,13 @@ const projects = {
     liri: {
         title: "LIRI",
         subtitle: "CLI program built with Node.js",
-        description: "LIRI takes command line arguments and allows the user to search for information on songs, movies, and band concerts using a number of APIs and Node packages. Checkout the readme on GitHub for more information!",
+        description: "LIRI takes command line arguments and allows the user to search for information on songs, movies, and band concerts using a number of APIs and Node packages. Checkout the readme on GitHub for a demo and more information!",
         repoLink: "https://github.com/Dylan-Thomson/liri"
+    },
+    constructorWordGuess: {
+        title: "Constructor Word Guess",
+        subtitle: "CLI Hangman Game built with Node.js",
+        description: "Word Game rebuilt using constructors. Checkout the readme on GitHub for a demo and more information!",
+        repoLink: "https://github.com/Dylan-Thomson/Constructor-Word-Guess"
     }
 }
