@@ -143,5 +143,11 @@ const projects = {
         subtitle: "CLI Hangman Game built with Node.js",
         description: "Word Game rebuilt using constructors. Checkout the readme on GitHub for a demo and more information!",
         repoLink: "https://github.com/Dylan-Thomson/Constructor-Word-Guess"
+    },
+    bamazon: {
+        title: "Bamazon",
+        subtitle: "CLI storefront built using Node.js and mySQL",
+        description: "Customers can view and purchase products, managers can add new products or increase stock of existing products, and supervisors can view profits for departments. Checkout the readme on Github for a demo and more info!",
+        repoLink: "https://github.com/Dylan-Thomson/bamazon"
     }
 }
