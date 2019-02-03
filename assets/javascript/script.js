@@ -132,6 +132,13 @@ const projects = {
         repoLink: "https://github.com/Dylan-Thomson/PomodoroClock",
         liveLink: "https://dylan-thomson.github.io/PomodoroClock/"
     },
+    friendfinder: {
+        title: "FriendFinder",
+        subtitle: "Match with compatible friends based on personality questions",
+        description: "A fullstack web application where users fill out a survey and are shown the most compatible match out of a list of friends.",
+        repoLink: "https://github.com/Dylan-Thomson/FriendFinder",
+        liveLink: "https://lit-caverns-99168.herokuapp.com/"
+    },
     liri: {
         title: "LIRI",
         subtitle: "CLI program built with Node.js",
