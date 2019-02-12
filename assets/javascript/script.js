@@ -156,5 +156,12 @@ const projects = {
         subtitle: "CLI storefront built using Node.js and mySQL",
         description: "Customers can view and purchase products, managers can add new products or increase stock of existing products, and supervisors can view profits for departments. Checkout the readme on Github for a demo and more info!",
         repoLink: "https://github.com/Dylan-Thomson/bamazon"
+    },
+    projectBoard: {
+        title: "Project Board",
+        subtitle: "Fullstack Task Management Inspired By Trello",
+        description: "View and update tasks for group projects. Users can drag and drop tasks to change their status from \"To Do\" to \"Complete\", or interact with modals to update or add tasks.",
+        repoLink: "https://github.com/Dylan-Thomson/ProjectBoard",
+        liveLink: "https://lit-fjord-11882.herokuapp.com/"
     }
 }
