@@ -163,5 +163,12 @@ const projects = {
         description: "View and update tasks for group projects. Users can drag and drop tasks to change their status from \"To Do\" to \"Complete\", or interact with modals to update or add tasks.",
         repoLink: "https://github.com/Dylan-Thomson/ProjectBoard",
         liveLink: "https://lit-fjord-11882.herokuapp.com/"
+    },
+    bcf: {
+        title: "BootCampFu",
+        subtitle: "Question and Answer Forum for Trilogy Coding Bootcamp Students",
+        description: "Students can create accounts, post questions about various topics, post responses to questions, and vote on posts.",
+        repoLink: "https://github.com/Dylan-Thomson/BootCampFu",
+        liveLink: "https://nameless-eyrie-66645.herokuapp.com/"
     }
 }

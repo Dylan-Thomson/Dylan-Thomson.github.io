@@ -47,26 +47,37 @@
     </nav>
     <section class="d-flex flex-column justify-content-between align-content-center bg-white" id="about">
         <div class="container">
-            <h2 class="text-center display-4 my-4">ABOUT</h2>
+            <h2 class="text-center display-4">ABOUT</h2>
             <div class="row py-4">
-                <div class="col-lg-6 text-center d-flex flex-column justify-content-center">
-                    <h3 class="my-2">About Me</h3>
-                    <img class="img-fluid mx-auto my-2" id="profile-img" src="assets/images/profile.jpg" alt="Dylan Thomson">
-                    <p>I'm a web developer based in Northeast Ohio. I have a Bachelor's in Computer and Information Science from Cleveland State University, and am currently attending Case Western's Web Development Bootcamp.</p>
-                </div>
-                <div class="col-lg-6 text-center d-flex flex-column justify-content-center">
+                <div class="col-md-8">
+                    <h3 class="my-2">About Me</h3>                 
+                    <p>I am a fullstack web developer based in Northeast Ohio. I have earned a Bachelor's in Computer and Information Science from Cleveland State University, and am currently attending Case Western's Web Development Bootcamp.</p>
+                    <p>I have a lifelong passion for making the world a happier place with technology, and strive to learn something new every single day.</p>
                     <h3 class="my-2">Skills</h3>
-                    <p><strong>Front End: </strong> <br> HTML5, CSS3, JavaScript, jQuery</p>
-                    <p><strong>Back End: </strong>  <br> Google Firebase, Node.js, Express, Handlebars, MySQL, Sequelize</p>
-                    <p><strong>Developer Tools: </strong>  <br> Git/GitHub, Heroku, Linux/UNIX terminal commands</p>
+                    <p><strong>Front End: </strong> <br> HTML5, CSS3, Bootstrap, JavaScript, jQuery</p>
+                    <p><strong>Back End: </strong>  <br> Google Firebase, Node.js, Express, Handlebars, MySQL, Sequelize, MongoDB</p>
+                    <p><strong>Developer Tools: </strong>  <br> Git/GitHub, Heroku, Linux/UNIX, Postman, ESLint</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img class="img-fluid mx-auto" id="profile-img" src="assets/images/profile.jpg" alt="Dylan Thomson">
                 </div>
             </div>
         </div>
     </section>
     <section class="d-flex flex-column justify-content-between align-content-center bg-light" id="portfolio">
         <div class="container">
-            <h2 class="text-center display-4 m-4">PROJECTS</h2>
+            <h2 class="text-center display-4">PROJECTS</h2>
             <div class="row pt-4 pb-md-4">
+                <div class="col-lg-4 col-md-6 px-0">
+                    <div class="card project">
+                        <img class="card-img" src="assets/images/BCF.png" alt="BootCampFu">
+                        <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
+                            <h5 class="card-title">BootCampFu</h5>
+                            <p class="card-text text-secondary">Node, Express, MySQL, Handlebars, Sequelize</p>
+                            <button class="btn-learn-more w-50 mx-auto" data-project="bcf">Learn More</button>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-lg-4 col-md-6 px-0">
                     <div class="card project">
                         <img class="card-img" src="assets/images/projectboard.png" alt="Project Board">
@@ -79,21 +90,21 @@
                 </div>
                 <div class="col-lg-4 col-md-6 px-0">
                     <div class="card project">
-                        <img class="card-img" src="assets/images/friendfinder.png" alt="FriendFinder">
-                        <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
-                            <h5 class="card-title">FriendFinder</h5>
-                            <p class="card-text text-secondary">Node.js/Express</p>
-                            <button class="btn-learn-more w-50 mx-auto" data-project="friendfinder">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 px-0">
-                    <div class="card project">
                         <img class="card-img" src="assets/images/tinfur.png" alt="TinFur">
                         <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
                             <h5 class="card-title">TinFur</h5>
                             <p class="card-text text-secondary">Group project</p>
                             <button class="btn-learn-more w-50 mx-auto" data-project="tinfur">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 px-0">
+                    <div class="card project">
+                        <img class="card-img" src="assets/images/friendfinder.png" alt="FriendFinder">
+                        <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
+                            <h5 class="card-title">FriendFinder</h5>
+                            <p class="card-text text-secondary">Node.js/Express</p>
+                            <button class="btn-learn-more w-50 mx-auto" data-project="friendfinder">Learn More</button>
                         </div>
                     </div>
                 </div>
@@ -117,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 px-0">
+                <!-- <div class="col-lg-4 col-md-6 px-0">
                     <div class="card project">
                         <img class="card-img" src="assets/images/rpg.png" alt="Overwatch RPG">
                         <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
@@ -126,103 +137,22 @@
                             <button class="btn-learn-more w-50 mx-auto" data-project="rpg">Learn More</button>
                         </div>
                     </div>
-                </div>
-                <!-- <div class="col-lg-4 col-md-6 px-0">
-                    <div class="card project">
-                        <img class="card-img" src="assets/images/triviagame.png" alt="Trivia Game">
-                        <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
-                            <h5 class="card-title">Trivia Game</h5>
-                            <p class="card-text text-secondary">JavaScript</p>
-                            <button class="btn-learn-more w-50 mx-auto" data-project="trivia">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 px-0">
-                    <div class="card project">
-                        <img class="card-img" src="assets/images/liri.png" alt="LIRI">
-                        <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
-                            <h5 class="card-title">LIRI</h5>
-                            <p class="card-text text-secondary">Node.js</p>
-                            <button class="btn-learn-more w-50 mx-auto" data-project="liri">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 px-0">
-                    <div class="card project">
-                        <img class="card-img" src="assets/images/bamazon.png" alt="Bamazon">
-                        <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
-                            <h5 class="card-title">Bamazon</h5>
-                            <p class="card-text text-secondary">Node.js, MySQL</p>
-                            <button class="btn-learn-more w-50 mx-auto" data-project="bamazon">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 px-0">
-                    <div class="card project">
-                        <img class="card-img" src="assets/images/constructorwordguess.png" alt="Constructor Word Guess">
-                        <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
-                            <h5 class="card-title">Constructor Word Guess</h5>
-                            <p class="card-text text-secondary">Node.js</p>
-                            <button class="btn-learn-more w-50 mx-auto" data-project="constructorWordGuess">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 px-0">
-                    <div class="card project">
-                        <img class="card-img" src="assets/images/wordguess.png" alt="Word Guessing Game">
-                        <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
-                            <h5 class="card-title">Word Guessing Game</h5>
-                            <p class="card-text text-secondary">JavaScript</p>
-                            <button class="btn-learn-more w-50 mx-auto" data-project="wordguess">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 px-0">
-                    <div class="card project">
-                        <img class="card-img" src="assets/images/calculator.png" alt="Calculator">
-                        <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
-                            <h5 class="card-title">Calculator</h5>
-                            <p class="card-text text-secondary">jQuery/JavaScript</p>
-                            <button class="btn-learn-more w-50 mx-auto" data-project="calculator">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 px-0">
-                    <div class="card project">
-                        <img class="card-img" src="assets/images/simongame.png" alt="Simon Game">
-                        <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
-                            <h5 class="card-title">Simon Game</h5>
-                            <p class="card-text text-secondary">jQuery/JavaScript</p>
-                            <button class="btn-learn-more w-50 mx-auto" data-project="simon">Learn More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 px-0">
-                    <div class="card project">
-                        <img class="card-img" src="assets/images/pomodoro.png" alt="Pomodoro Timer">
-                        <div class="card-img-overlay text-center d-flex flex-column justify-content-center">
-                            <h5 class="card-title">Pomodoro Timer</h5>
-                            <p class="card-text text-secondary">jQuery/JavaScript</p>
-                            <button class="btn-learn-more w-50 mx-auto" data-project="pomodoro">Learn More</button>
-                        </div>
-                    </div>
                 </div> -->
-                
             </div>
         </div>
     </section>
     <section class="d-flex flex-column justify-content-between align-content-center" id="contact">
         <div class="container">
-            <h2 class="text-center display-4 m-4">CONTACT</h2>
+            <h2 class="text-center display-4">CONTACT</h2>
             <div class="row py-4">
                 <div class="col-md-6 my-4">
                     <h6 class="my-2">Have a question or want to work together?</h6>
-                    <p>The best ways to contact me are via email or through the LinkedIn link below. </p>
+                    <p>The best ways to contact me are via email or through the LinkedIn link in the footer below.</p>
                     <p>I am currently seeking a junior web developer position but am open to other software development opportunities as well!</p>
                 </div>
-                <div class="col-md-6 my-4">
-                    <h6 class="text-center my-2">How can you reach me?</h6>
-                    <ul class="list-unstyled text-center">
+                <div class="col-md-4 offset-md-2 my-4">
+                    <h6 class="my-2">How can you reach me?</h6>
+                    <ul class="list-unstyled">
                         <li>
                             Phone: <a class="contact-link" href="tel:440-479-8622">(440) 479-8622</a>
                         </li>
@@ -237,28 +167,28 @@
             </div>
         </div>
         
-        <footer class="p-4 bg-dark">
-            <div class="text-center my-4" id="footer-links">
-                <a href="https://www.linkedin.com/in/dylanjthomson" target="_blank">
-                    <i class="p-3 mx-2 fab fa-lg fa-linkedin-in"></i>
-                </a>
-                <a href="https://github.com/Dylan-Thomson" target="_blank">
-                    <i class="p-3 mx-2 fab fa-lg fa-github"></i>
-                </a>
-                <a href="https://codepen.io/dylanjt/" target="_blank">
-                    <i class="p-3 mx-2 fab fa-lg fa-codepen"></i>
-                </a>
-            </div>
-            <p class="text-center" id="copyright">Copyright &copy;
-                <script>
-                    var d = new Date()
-                    document.write(d.getFullYear())
-                    </script> 
-                <a class="copyright-link" href="https://github.com/Dylan-Thomson" target="_blank"> Dylan Thomson</a>
-            </p>
-        </footer>
     </section>
-
+    <footer class="p-4 bg-dark">
+        <div class="text-center my-4" id="footer-links">
+            <a href="https://www.linkedin.com/in/dylanjthomson" target="_blank">
+                <i class="p-3 mx-2 fab fa-lg fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Dylan-Thomson" target="_blank">
+                <i class="p-3 mx-2 fab fa-lg fa-github"></i>
+            </a>
+            <a href="https://codepen.io/dylanjt/" target="_blank">
+                <i class="p-3 mx-2 fab fa-lg fa-codepen"></i>
+            </a>
+        </div>
+        <p class="text-center" id="copyright">Copyright &copy;
+            <script>
+                var d = new Date()
+                document.write(d.getFullYear())
+            </script> 
+            <a class="copyright-link" href="https://github.com/Dylan-Thomson" target="_blank"> Dylan Thomson</a>
+        </p>
+    </footer>
+    
     <div class="modal fade" id="modal-learn-more" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
@@ -270,9 +200,7 @@
                 </div>
                 <div class="modal-body pb-4">
                     <h6 id="learn-more-subtitle">Subtitle</h6>
-                    <p id="learn-more-description">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo quos sint officia inventore autem eius aliquid, tempora et omnis beatae nihil, dolore aperiam. Illo deserunt laudantium, deleniti nesciunt quae corrupti.
-                    </p>
+                    <p id="learn-more-description"></p>
                 </div>
                 <div class="modal-footer">
                     <a class="modal-link p-2 mx-2" id="link-repo" href="https://github.com/Dylan-Thomson" target="_blank"><i class="fab fa-github"></i> GitHub</a>
