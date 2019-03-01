@@ -13,17 +13,18 @@ body {
 }
 
 section {
-    min-height: 100vh;
+    min-height: 75vh;
 }
 
 section:not(:first-child) {
     /* Offset for navbar */
-    padding-top: 59px;
+   padding-top: 59px;
 }
 
 
 /* HOME */
 #home {
+    min-height: 100vh;
     background: var(--gray-color);
     background-image: url(../images/footer_lodyas.png);
     color: var(--white-color);
@@ -82,7 +83,8 @@ nav {
 
 /* ABOUT */
 #profile-img {
-    max-width: 15em;
+    /* max-width: 15em; */
+    width: 100%;
     border: 1px solid var(--dark-color);
 }
 
@@ -126,6 +128,7 @@ nav {
 .btn-learn-more:hover {
     background: var(--complimentary-color);
     color: var(--white-color);
+    cursor: pointer;
 }
 
 .modal-link {
