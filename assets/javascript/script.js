@@ -170,5 +170,12 @@ const projects = {
         description: "Students can create accounts, post questions about various topics, post responses to questions, and vote on posts.",
         repoLink: "https://github.com/Dylan-Thomson/BootCampFu",
         liveLink: "https://nameless-eyrie-66645.herokuapp.com/"
+    },
+    gamescrape: {
+        title: "GameScrape",
+        subtitle: "Scrape Gaming News",
+        description: "Users can scrape and view gaming news articles from several sites. They can also view, add, and delete comments on articles.",
+        repoLink: "https://github.com/Dylan-Thomson/GameScrape",
+        liveLink: "https://floating-scrubland-89374.herokuapp.com/"
     }
 }
