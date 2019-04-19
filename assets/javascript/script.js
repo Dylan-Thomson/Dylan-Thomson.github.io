@@ -177,5 +177,12 @@ const projects = {
         description: "Users can scrape and view gaming news articles from several sites. They can also view, add, and delete comments on articles.",
         repoLink: "https://github.com/Dylan-Thomson/GameScrape",
         liveLink: "https://floating-scrubland-89374.herokuapp.com/"
-    }
+    },
+    gameplan: {
+        title: "GamePlan",
+        subtitle: "MERN stack social media application catered to tabletop gamers",
+        description: "Users can create an account with a profile, and add their favorite games. Search for other users by game, send messages, join/create groups and events.",
+        repoLink: "https://github.com/jmbw88/GamePlan",
+        liveLink: "https://fierce-bastion-78714.herokuapp.com/"
+    },
 }
