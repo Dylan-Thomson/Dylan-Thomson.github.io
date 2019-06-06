@@ -176,7 +176,7 @@ const projects = {
         subtitle: "Scrape Gaming News",
         description: "Users can scrape and view gaming news articles from several sites. They can also view, add, and delete comments on articles.",
         repoLink: "https://github.com/Dylan-Thomson/GameScrape",
-        liveLink: "https://floating-scrubland-89374.herokuapp.com/"
+        liveLink: "https://gamescrape.herokuapp.com/"
     },
     gameplan: {
         title: "GamePlan",
