@@ -140,12 +140,25 @@
   <section class="band" id="work" aria-labelledby="work-h">
     <h2 id="work-h" class="section-h"><span class="num">03</span> Selected work</h2>
     <p class="section-note">
-      Four projects from five years at one peer-to-peer marketplace: the ones I'd want to
+      Seven projects from five years at one peer-to-peer marketplace: the ones I'd want to
       talk through. Vendor names and internal project codenames are generalized, and links
       to private repositories are omitted.
     </p>
 
     <ol class="timeline">
+
+      <li class="entry">
+        <div class="when">2026</div>
+        <div class="what">
+          <h3>Installment payments, phase 2</h3>
+          <p class="role">Technical design → implementation</p>
+          <p>Pushed a pay-over-time option deeper into the booking flow: a new estimate
+          field and calculator on the API, shared SDK helpers so every surface agreed on
+          the math, the quote-builder UI, error handling, an admin indicator on
+          reservations, and Cypress coverage over the paths that touch money.</p>
+          <ul class="tags"><li>Rails</li><li>React</li><li>Payments</li><li>Cypress</li></ul>
+        </div>
+      </li>
 
       <li class="entry">
         <div class="when">2025 – 2026</div>
@@ -175,6 +188,19 @@
       </li>
 
       <li class="entry">
+        <div class="when">2023</div>
+        <div class="what">
+          <h3>Security deposit waiver</h3>
+          <p class="role">POC → release</p>
+          <p>Proved out a way for renters to buy down their security deposit, then built
+          it: standalone benefit selection, pricing display, coverage configuration and
+          seeding, and the release itself, spanning the API, the owner dashboard, and the
+          marketplace.</p>
+          <ul class="tags"><li>Rails</li><li>React</li><li>Pricing</li></ul>
+        </div>
+      </li>
+
+      <li class="entry">
         <div class="when">2022 – 2023</div>
         <div class="what">
           <h3>Coverage selection &amp; versioning</h3>
@@ -185,6 +211,19 @@
           and versioning tooling, coverage properties, estimator updates, and coordination
           with mobile. Still the thing everything else is built on.</p>
           <ul class="tags"><li>Rails</li><li>Versioning</li><li>Backwards compatibility</li></ul>
+        </div>
+      </li>
+
+      <li class="entry">
+        <div class="when">2022 – 2023</div>
+        <div class="what">
+          <h3>Additional drivers</h3>
+          <p class="role">Implementation and documentation</p>
+          <p>Built the flow for adding drivers to a rental, then extended it to work
+          outside the booking flow and to charge correctly when it did: API mutations and
+          interactors, dashboard behavior, reporting, and the internal diagrams and docs
+          that made the charging rules legible to everyone who came after.</p>
+          <ul class="tags"><li>Rails</li><li>React</li><li>Documentation</li></ul>
         </div>
       </li>
 
@@ -205,13 +244,12 @@
 
     <div class="also">
       <h3>Also shipped</h3>
-      <p>Installment payments, phase&nbsp;2 (2026) · park models, a new vehicle category
-      across the stack (2024) · a Cypress and end-to-end test program across the insurance
-      flows (2023–2025) · security deposit waiver (2023) · claims integration (2023) ·
-      additional drivers (2022–2023) · search ranking and quote experiments (2021–2023) ·
-      insurance provider migration (2021–2022) · one-way rentals and dynamic landing routes
-      (2021) · support chatbot integration (2024) · technical design work on promo codes and
-      calendar blocks (2024).</p>
+      <p>Park models, a new vehicle category across the stack (2024) · a Cypress and
+      end-to-end test program across the insurance flows (2023–2025) · claims integration
+      (2023) · search ranking and quote experiments (2021–2023) · insurance provider
+      migration (2021–2022) · one-way rentals and dynamic landing routes (2021) · support
+      chatbot integration (2024) · technical design work on promo codes and calendar blocks
+      (2024).</p>
     </div>
   </section>
 
