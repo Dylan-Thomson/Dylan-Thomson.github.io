@@ -259,6 +259,12 @@ main > section { padding-block: clamp(3.5rem, 8vw, 6.5rem); }
   border-radius: var(--r);
   padding: 1.6rem 1.5rem;
 }
+/* Only span once the grid actually has a second column to span into, or the
+   span would force an implicit extra column at single-column widths. */
+@media (min-width: 660px) {
+  .card--wide { grid-column: span 2; }
+}
+.card .tags { margin-top: 1rem; }
 .card h3 {
   font-size: 1rem;
   margin-bottom: .6rem;

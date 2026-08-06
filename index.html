@@ -98,11 +98,16 @@
         flows that move money: Mixpanel events, RSpec, Cypress, release checklists, staged
         rollouts, and post-launch monitoring.</p>
       </article>
-      <article class="card">
+      <article class="card card--wide">
         <h3>Agents in the loop</h3>
         <p>I build deterministic, LLM-driven tooling around Claude Code to automate parts of
-        my own workflow, including a pipeline that carries a work item from card to pull
-        request to deploy to CI without a human driving each hop.</p>
+        my own workflow. The main one turns a card into a pull request that is ready for
+        human review: the change gets written, put through several independent AI review
+        passes, and run against an extensive end-to-end regression suite in Jenkins before
+        anyone opens it. A person still approves and merges. The goal is not to remove the
+        reviewer; it is to make sure that by the time work reaches them, the obvious
+        problems are already gone.</p>
+        <ul class="tags"><li>Claude Code</li><li>Jenkins</li><li>E2E regression</li><li>Automated review</li></ul>
       </article>
     </div>
   </section>
@@ -258,7 +263,7 @@
       <div><dt>Data &amp; background</dt><dd>MySQL · Sidekiq</dd></div>
       <div><dt>Product analytics</dt><dd>Mixpanel · Segment · Optimizely</dd></div>
       <div><dt>Agent tooling</dt><dd>Claude Code</dd></div>
-      <div><dt>Tools</dt><dd>Git · GitHub</dd></div>
+      <div><dt>Tools</dt><dd>Git · GitHub · Jenkins</dd></div>
     </dl>
   </section>
 
