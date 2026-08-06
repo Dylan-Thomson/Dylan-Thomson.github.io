@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Dylan Thomson, Software Engineer</title>
-<meta name="description" content="Dylan Thomson, Software Engineer III. Ruby on Rails and React. Five years building the insurance, pricing, and checkout platform behind a large RV rental marketplace, plus deterministic LLM-driven tooling built around Claude Code.">
+<meta name="description" content="Dylan Thomson, Software Engineer III. Ruby on Rails and React. Five years on both sides of a peer-to-peer RV rental marketplace, from owner listing tools to renter checkout, with depth in the insurance and protection layer underneath. Plus deterministic LLM-driven tooling built around Claude Code.">
 <meta name="color-scheme" content="dark light">
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Dylan Thomson, Software Engineer">
-<meta property="og:description" content="Ruby on Rails and React. Five years on the insurance, pricing, and checkout platform behind a large RV rental marketplace, plus deterministic LLM-driven workflow tooling.">
+<meta property="og:description" content="Ruby on Rails and React. Five years on both sides of a peer-to-peer RV rental marketplace, with depth in the insurance and protection layer underneath.">
 
 <link rel="stylesheet" href="styles.css">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🛠️</text></svg>">
@@ -51,13 +51,16 @@
     <h1>Dylan&nbsp;Thomson</h1>
     <p class="lede">
       Software Engineer III working in <strong>Ruby on Rails</strong> and <strong>React</strong>.
-      For the past five years I've worked deep in the insurance, pricing, and checkout
-      platform behind a nationwide RV rental marketplace: the systems that decide what a
-      renter is covered for, what it costs, and what happens when something goes wrong.
-      Lately I've been building agent tooling that automates the way I do that work.
+      For the past five years I've built features on both sides of a nationwide
+      <strong>peer-to-peer RV rental marketplace</strong>: the tools owners use to list and
+      manage their rigs, and the search, quote, and checkout flow renters book through.
+      Most of my depth is in the protection layer underneath it, which is what makes
+      strangers renting strangers' vehicles work at all. Lately I've been building agent
+      tooling that automates the way I do that work.
     </p>
     <ul class="facts">
-      <li><span class="n">5 yrs</span> on insurance &amp; protection</li>
+      <li><span class="n">5 yrs</span> in a peer-to-peer marketplace</li>
+      <li><span class="n">Both</span> sides: owner tools and renter checkout</li>
       <li><span class="n">6+</span> services touched per feature</li>
       <li><span class="n">20+</span> shipped initiatives since 2021</li>
     </ul>
@@ -72,10 +75,17 @@
     <h2 id="themes-h" class="section-h"><span class="num">01</span> How I work</h2>
     <div class="grid-4">
       <article class="card">
-        <h3>Complicated domains</h3>
-        <p>Insurance is where correctness is not optional. Most of my work lives in coverage
-        selection and versioning, standalone benefits, additional drivers, claims, and the
-        pricing rules underneath them, including the parts nobody wants to touch.</p>
+        <h3>Both sides of the market</h3>
+        <p>Supply and demand are one system. I've worked across listing creation and
+        management, inventory categories, calendars and availability, search and ranking,
+        quote, and checkout. Features rarely stay on one side of that line for long.</p>
+      </article>
+      <article class="card">
+        <h3>The protection layer</h3>
+        <p>Peer-to-peer rental only works if both parties are covered, and correctness there
+        is not optional. This is where most of my depth is: coverage selection and
+        versioning, standalone benefits, additional drivers, claims, and the pricing rules
+        underneath them.</p>
       </article>
       <article class="card">
         <h3>Design before code</h3>
@@ -84,15 +94,10 @@
         before a single card was cut.</p>
       </article>
       <article class="card">
-        <h3>Measurement built in</h3>
-        <p>Features ship with instrumentation. I've modernized event tracking across the
-        funnel, built experiment infrastructure, and used the resulting data to decide what
-        stayed and what got rolled back.</p>
-      </article>
-      <article class="card">
-        <h3>Release confidence</h3>
-        <p>RSpec, Cypress, and end-to-end coverage on the flows that move money; release
-        checklists, staged rollouts, post-launch monitoring, and the retro afterwards.</p>
+        <h3>Measured and tested</h3>
+        <p>Features ship instrumented, so we can tell whether they worked, and tested on the
+        flows that move money: Mixpanel events, RSpec, Cypress, release checklists, staged
+        rollouts, and post-launch monitoring.</p>
       </article>
     </div>
   </section>
@@ -135,9 +140,9 @@
   <section class="band" id="work" aria-labelledby="work-h">
     <h2 id="work-h" class="section-h"><span class="num">03</span> Selected work</h2>
     <p class="section-note">
-      Seven projects from five years at one marketplace: the ones I'd want to talk through.
-      Vendor names and internal project codenames are generalized, and links to private
-      repositories are omitted.
+      Eight projects from five years at one peer-to-peer marketplace, spanning both sides
+      of it: the ones I'd want to talk through. Vendor names and internal project codenames
+      are generalized, and links to private repositories are omitted.
     </p>
 
     <ol class="timeline">
@@ -238,16 +243,30 @@
         </div>
       </li>
 
+      <li class="entry">
+        <div class="when">2021 – 2023</div>
+        <div class="what">
+          <h3>Search ranking &amp; quote experiments</h3>
+          <p class="role">Demand side</p>
+          <p>How renters find a rig and get to a price. Ran an A/B test on search sort
+          order, then did the less common half of the job: pulled the experimentation
+          vendor's calls out of the hot path once they turned out to be a latency problem,
+          and promoted the winning variant permanently. Later built the experiment
+          infrastructure for the quote step, ran the first round of tests through it, and
+          did the routing cleanup once they concluded.</p>
+          <ul class="tags"><li>Next.js</li><li>Rails</li><li>Optimizely</li><li>Performance</li></ul>
+        </div>
+      </li>
+
     </ol>
 
     <div class="also">
       <h3>Also shipped</h3>
       <p>Installment payments, phase&nbsp;2 (2026) · a Cypress and end-to-end test program
       across the insurance flows (2023–2025) · security deposit waiver (2023) · claims
-      integration (2023) · quote-builder experiments (2023) · additional drivers (2022–2023)
-      · insurance provider migration (2021–2022) · search ranking experiments (2021) ·
-      support chatbot integration (2024) · technical design work on promo codes and
-      calendar blocks (2024).</p>
+      integration (2023) · additional drivers (2022–2023) · insurance provider migration
+      (2021–2022) · one-way rentals and dynamic landing routes (2021) · support chatbot
+      integration (2024) · technical design work on promo codes and calendar blocks (2024).</p>
     </div>
   </section>
 
