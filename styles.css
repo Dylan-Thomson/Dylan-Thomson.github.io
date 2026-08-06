@@ -25,7 +25,7 @@ html[data-theme="dark"] {
   --line-soft: #1e222a;
   --ink: #e8eaee;
   --ink-2: #98a1ad;
-  --ink-3: #6b7381;
+  --ink-3: #7c8492;
   --accent: #e0a45c;
   --accent-quiet: #3a2d1c;
   --on-accent: #17130c;
@@ -41,9 +41,9 @@ html[data-theme="light"] {
   --line-soft: #ece8e1;
   --ink: #191b1f;
   --ink-2: #5d646e;
-  --ink-3: #878e99;
-  --accent: #a8631f;
-  --accent-quiet: #f6e9d8;
+  --ink-3: #6b7280;
+  --accent: #9a5a19;
+  --accent-quiet: #f7ead9;
   --on-accent: #ffffff;
   --shadow: 0 1px 2px rgb(30 25 15 / .05), 0 10px 28px -16px rgb(30 25 15 / .28);
 }
@@ -90,7 +90,8 @@ p { text-wrap: pretty; }
 .topbar {
   position: sticky; top: 0; z-index: 10;
   display: flex; align-items: center; gap: 1rem;
-  padding: .75rem var(--pad);
+  padding-block: .75rem;
+  padding-inline: max(var(--pad), calc((100% - var(--wide)) / 2));
   background: color-mix(in srgb, var(--bg) 82%, transparent);
   backdrop-filter: saturate(1.6) blur(10px);
   border-bottom: 1px solid var(--line-soft);
@@ -135,10 +136,14 @@ html[data-theme="light"] .icon-moon { display: none; }
 
 /* ── layout ──────────────────────────────────────────────────────────────── */
 
-main > section {
-  padding: clamp(3.5rem, 8vw, 6.5rem) var(--pad);
+/* One content column, expressed as padding rather than `margin-inline: auto` on
+   the children — children that set their own `margin` (or a narrower max-width)
+   would otherwise silently opt out of the centering and misalign. */
+main > section,
+footer {
+  padding-inline: max(var(--pad), calc((100% - var(--wide)) / 2));
 }
-main > section > * { max-width: var(--wide); margin-inline: auto; }
+main > section { padding-block: clamp(3.5rem, 8vw, 6.5rem); }
 
 .band { background: var(--bg-2); border-block: 1px solid var(--line-soft); }
 
@@ -317,7 +322,7 @@ main > section > * { max-width: var(--wide); margin-inline: auto; }
 .when::before {
   content: "";
   position: absolute;
-  right: -2rem; top: .6rem;
+  right: -1rem; top: .6rem;
   width: 5px; height: 5px;
   border-radius: 50%;
   background: var(--line);
@@ -432,12 +437,12 @@ main > section > * { max-width: var(--wide); margin-inline: auto; }
 /* ── footer ──────────────────────────────────────────────────────────────── */
 
 footer {
-  padding: 2.5rem var(--pad) 3.5rem;
+  padding-block: 2.5rem 3.5rem;
   border-top: 1px solid var(--line-soft);
   color: var(--ink-3);
   font-size: .8rem;
 }
-footer p { margin: 0 auto; max-width: var(--wide); }
+footer p { margin: 0; }
 footer .colophon { font-family: var(--mono); margin-top: .35rem; opacity: .8; }
 
 /* ── reveal on scroll ────────────────────────────────────────────────────── */
