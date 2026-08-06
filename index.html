@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dylan Thomson — Software Engineer</title>
+<meta name="description" content="Dylan Thomson — Software Engineer III. Ruby on Rails and React. Five years building the insurance, pricing, and checkout platform behind a large RV rental marketplace.">
+<meta name="color-scheme" content="dark light">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Dylan Thomson — Software Engineer">
+<meta property="og:description" content="Ruby on Rails and React. Five years building the insurance, pricing, and checkout platform behind a large RV rental marketplace.">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='26'>🛠️</text></svg>">
+
+<!-- Set the theme before first paint so there is no flash. -->
+<script>
+  (() => {
+    let stored;
+    try { stored = localStorage.getItem('theme'); } catch {}
+    document.documentElement.dataset.theme =
+      stored || (matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+  })();
+</script>
+</head>
+<body>
+
+<a class="skip" href="#work">Skip to work</a>
+
+<header class="topbar">
+  <a class="mark" href="#top"><span>DT</span></a>
+  <nav>
+    <a href="#work">Work</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button id="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch theme">
+    <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+    <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9 7 7M17 17l2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1"/></svg>
+  </button>
+</header>
+
+<main id="top">
+
+  <!-- ───────────────────────── hero ───────────────────────── -->
+  <section class="hero">
+    <p class="eyebrow">Sheffield Lake, Ohio</p>
+    <h1>Dylan&nbsp;Thomson</h1>
+    <p class="lede">
+      Software Engineer III working in <strong>Ruby on Rails</strong> and <strong>React</strong>.
+      For the past five years I've owned large parts of the insurance, pricing, and checkout
+      platform behind a nationwide RV rental marketplace — the systems that decide what a
+      renter is covered for, what it costs, and what happens when something goes wrong.
+    </p>
+    <ul class="facts">
+      <li><span class="n">5 yrs</span> owning insurance &amp; protection</li>
+      <li><span class="n">6+</span> services touched per feature</li>
+      <li><span class="n">20+</span> shipped initiatives since 2021</li>
+    </ul>
+    <div class="cta">
+      <a class="btn primary" href="#work">See selected work</a>
+      <a class="btn" href="mailto:djthomson88@gmail.com">Get in touch</a>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── themes ───────────────────────── -->
+  <section class="band" id="themes" aria-labelledby="themes-h">
+    <h2 id="themes-h" class="section-h"><span class="num">01</span> How I work</h2>
+    <div class="grid-4">
+      <article class="card">
+        <h3>Domain ownership</h3>
+        <p>Insurance is where correctness is not optional. I own coverage selection and
+        versioning, standalone benefits, additional drivers, claims, and the pricing rules
+        that sit underneath them — including the parts nobody wants to touch.</p>
+      </article>
+      <article class="card">
+        <h3>Design before code</h3>
+        <p>Most of my recent work started as a discovery doc: vendor evaluation, data
+        modeling, sequence diagrams, and a written technical design reviewed across teams
+        before a single card was cut.</p>
+      </article>
+      <article class="card">
+        <h3>Measurement built in</h3>
+        <p>Features ship with instrumentation. I've modernized event tracking across the
+        funnel, built experiment infrastructure, and used the resulting data to decide what
+        stayed and what got rolled back.</p>
+      </article>
+      <article class="card">
+        <h3>Release confidence</h3>
+        <p>RSpec, Cypress, and end-to-end coverage on the flows that move money; release
+        checklists, staged rollouts, post-launch monitoring, and the retro afterwards.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ───────────────────────── work ───────────────────────── -->
+  <section id="work" aria-labelledby="work-h">
+    <h2 id="work-h" class="section-h"><span class="num">02</span> Selected work</h2>
+    <p class="section-note">
+      Five years at one marketplace, in order. Client names, vendor names, and internal
+      project codenames are generalized; links to private repositories are omitted.
+    </p>
+
+    <div class="filters" role="group" aria-label="Filter work by area">
+      <button class="chip is-on" data-filter="all" aria-pressed="true">All</button>
+      <button class="chip" data-filter="ip" aria-pressed="false">Insurance &amp; protection</button>
+      <button class="chip" data-filter="analytics" aria-pressed="false">Analytics &amp; experiments</button>
+      <button class="chip" data-filter="platform" aria-pressed="false">Platform &amp; data</button>
+      <button class="chip" data-filter="integrations" aria-pressed="false">Integrations</button>
+      <button class="chip" data-filter="testing" aria-pressed="false">Testing &amp; quality</button>
+    </div>
+
+    <ol class="timeline">
+
+      <li class="entry" data-tags="ip integrations" data-featured="true">
+        <div class="when">2025</div>
+        <div class="what">
+          <h3>Trip protection <span class="badge">Featured</span></h3>
+          <p class="role">Vendor discovery → technical design → implementation</p>
+          <p>Led evaluation of travel-insurance vendors, then designed and built the full
+          product lifecycle in-house: quoting, purchase, modification, cancellation, and a
+          lifecycle manager that keeps policies in step with a booking as it changes.
+          Included an XML client for the vendor API, orchestration against the existing
+          protection flow, and reconciliation for money that had already moved.</p>
+          <ul class="tags"><li>Rails</li><li>Third-party API</li><li>State machines</li><li>Reconciliation</li></ul>
+        </div>
+      </li>
+
+      <li class="entry" data-tags="ip">
+        <div class="when">2025 – 2026</div>
+        <div class="what">
+          <h3>Stationary rentals</h3>
+          <p class="role">Implementation lead</p>
+          <p>Added support for rentals that never leave the lot — a different risk profile,
+          so a different coverage record, pricing rule, and quote presentation. Shipped
+          across the API, the estimator, checkout step-skipping, and the policy platform,
+          with end-to-end test repair, launch monitoring, and the follow-up bug tail.</p>
+          <ul class="tags"><li>Rails</li><li>Pricing rules</li><li>Checkout</li></ul>
+        </div>
+      </li>
+
+      <li class="entry" data-tags="platform analytics" data-featured="true">
+        <div class="when">2026</div>
+        <div class="what">
+          <h3>Listing quality highlights <span class="badge">Featured</span></h3>
+          <p class="role">Technical design → delivery</p>
+          <p>An end-to-end feature of my own: wrote the technical design, cut the cards,
+          modeled the qualification logic, backfilled and indexed it for search, exposed it
+          as a search-results filter, built the owner-facing toggle in the listing manager,
+          surfaced it on listing detail pages, and instrumented the whole thing.</p>
+          <ul class="tags"><li>Rails</li><li>React</li><li>Search indexing</li><li>Backfills</li></ul>
+        </div>
+      </li>
+
+      <li class="entry" data-tags="platform">
+        <div class="when">2026</div>
+        <div class="what">
+          <h3>Installment payments, phase 2</h3>
+          <p class="role">Design and implementation</p>
+          <p>Extended a pay-over-time option deeper into the booking flow: a new estimate
+          field and calculator on the API, shared SDK helpers so every surface agreed on
+          the math, quote-builder UI, error handling, an admin indicator on reservations,
+          and Cypress coverage over the paths that touch money.</p>
+          <ul class="tags"><li>Rails</li><li>React</li><li>Payments</li><li>Cypress</li></ul>
+        </div>
+      </li>
+
+      <li class="entry" data-tags="ip">
+        <div class="when">2025 – 2026</div>
+        <div class="what">
+          <h3>Coverage versions, base rates &amp; the offline estimator</h3>
+          <p class="role">Ongoing platform stewardship</p>
+          <p>The recurring, high-blast-radius maintenance behind insurance pricing:
+          generating new coverage versions, updating base rates and benefit-bundle rules,
+          reseeding the policy platform, and keeping an offline estimator honest as package
+          rules change underneath it.</p>
+          <ul class="tags"><li>Rails</li><li>Data seeding</li><li>Pricing</li></ul>
+        </div>
+      </li>
+
+      <li class="entry" data-tags="ip integrations">
+        <div class="when">2024</div>
+        <div class="what">
+          <h3>Policy platform transition</h3>
+          <p class="role">Design &amp; integration</p>
+          <p>Mapped and diagrammed how policies and mid-term adjustments actually flowed
+          between our system and the insurance provider, then handled the move to a new
+          policy service: state handling, ID-card behavior, webhook and adjustment flows,
+          and the support load that came with it.</p>
+          <ul class="tags"><li>Rails</li><li>Webhooks</li><li>Diagrams</li></ul>
+        </div>
+      </li>
+
+      <li class="entry" data-tags="platform">
+        <div class="when">2024</div>
+        <div class="what">
+          <h3>Park models</h3>
+          <p class="role">Technical design → release</p>
+          <p>Introduced a new vehicle category across the stack — vehicle data gem,
+          listing creation and management, search and filtering, listing-validation
+          tooling, and the estimator's product-code behavior — so a category with different
+          rules could exist without forking the booking flow.</p>
+          <ul class="tags"><li>Rails</li><li>Search</li><li>Data modeling</li></ul>
+        </div>
+      </li>
+
+      <li class="entry" data-tags="integrations">
+        <div class="when">2024</div>
+        <div class="what">
+          <h3>Support chatbot integration</h3>
+          <p>Took over a stalled vendor chatbot integration: got a local deliverable
+          building again, resolved the styling and embedding problems, coordinated with the
+          vendor, and left behind a README and release process someone else could follow.</p>
+          <ul class="tags"><li>JavaScript</li><li>Vendor integration</li></ul>
+        </div>
+      </li>
+
+      <li class="entry" data-tags="platform">
+        <div class="when">2024</div>
+        <div class="what">
+          <h3>Discovery: promo codes &amp; calendar blocks</h3>
+          <p>Two written investigations rather than shipped features. The first mapped
+          checkout promo-code behavior and the separation between discounts and account
+          balance, and proposed a data model and path forward after vendor uncertainty
+          stalled it. The second documented how to eliminate duplicate calendar blocks for
+          events across web, API, tooling, and iOS.</p>
+          <ul class="tags"><li>Technical design</li><li>Data modeling</li></ul>
+        </div>
+      </li>
+
+      <li class="entry" data-tags="testing">
+        <div class="when">2023 – 2025</div>
+        <div class="what">
+          <h3>End-to-end test program</h3>
+          <p>Expanded Cypress coverage on the internal dashboard from a thin layer to real
+          protection over insurance flows, coverage selection, additional drivers,
+          installment payments, and stationary behavior. Investigated bringing the same
+          approach to the marketplace, and spent the unglamorous hours killing flaky specs
+          so the suite stayed trusted.</p>
+          <ul class="tags"><li>Cypress</li><li>RSpec</li><li>CI</li></ul>
+        </div>
+      </li>
+
+      <li class="entry" data-tags="ip">
+        <div class="when">2023</div>
+        <div class="what">
+          <h3>Interior damage protection</h3>
+          <p class="role">Discovery → launch → retro</p>
+          <p>Owned a new standalone benefit end to end: discovery and technical design,
+          the benefit configuration model, coverage-selection changes, tracking, launch
+          prep, post-launch monitoring, the retro, and the claims-display follow-up once
+          real claims started arriving.</p>
+          <ul class="tags"><li>Rails</li><li>React</li><li>Product config</li></ul>
+        </div>
+      </li>
+
+      <li class="entry" data-tags="ip">
+        <div class="when">2023</div>
+        <div class="what">
+          <h3>Security deposit waiver</h3>
+          <p>Proved out a way for renters to buy down their security deposit, then built
+          it: standalone benefit selection, pricing display, coverage configuration and
+          seeding, and the release, spanning the API, the dashboard, and the marketplace.</p>
+          <ul class="tags"><li>Rails</li><li>React</li><li>Pricing</li></ul>
+        </div>
+      </li>
+
+      <li class="entry" data-tags="ip integrations">
+        <div class="when">2023</div>
+        <div class="what">
+          <h3>Claims, v2</h3>
+          <p>Brought claims data back from the insurance provider into our own product:
+          claim files, authorization and routing, and a claims section on reservation
+          details so support and owners could see the state of a claim without leaving the
+          tool they already used.</p>
+          <ul class="tags"><li>Rails</li><li>Authorization</li></ul>
+        </div>
+      </li>
+
+      <li class="entry" data-tags="analytics">
+        <div class="when">2023</div>
+        <div class="what">
+          <h3>Quote builder experiments</h3>
+          <p>Built the experiment infrastructure for the quote step and ran the first round
+          of tests through it — modal and copy variants, event instrumentation, a release
+          guide so others could run their own, and the routing cleanup once the tests
+          concluded.</p>
+          <ul class="tags"><li>React</li><li>Next.js</li><li>Experimentation</li></ul>
+        </div>
+      </li>
+
+      <li class="entry" data-tags="ip" data-featured="true">
+        <div class="when">2022 – 2023</div>
+        <div class="what">
+          <h3>Coverage selection &amp; versioning <span class="badge">Featured</span></h3>
+          <p class="role">Co-owner</p>
+          <p>The core of the protection platform: how a coverage package is defined,
+          versioned, defaulted, and priced, without breaking bookings already made against
+          an older version. Covered v2/v3 defaulting behavior, state-specific bundles,
+          admin and versioning tooling, coverage properties, estimator updates, and
+          coordination with mobile.</p>
+          <ul class="tags"><li>Rails</li><li>Versioning</li><li>Backwards compatibility</li></ul>
+        </div>
+      </li>
+
+      <li class="entry" data-tags="ip analytics">
+        <div class="when">2022 – 2023</div>
+        <div class="what">
+          <h3>Additional drivers</h3>
+          <p>Built the flow for adding drivers to a rental, then extended it to work
+          outside the booking flow and to charge correctly when it did — API mutations and
+          interactors, dashboard behavior, reporting, and the internal documentation and
+          diagrams that made the charging rules legible to everyone else.</p>
+          <ul class="tags"><li>Rails</li><li>React</li><li>Documentation</li></ul>
+        </div>
+      </li>
+
+      <li class="entry" data-tags="analytics" data-featured="true">
+        <div class="when">2022</div>
+        <div class="what">
+          <h3>Analytics modernization <span class="badge">Featured</span></h3>
+          <p class="role">Major contributor to a company-wide program</p>
+          <p>A cross-team effort to make funnel data trustworthy: added booking identifiers
+          and the events that were quietly missing, fixed page-track and UTM reporting,
+          supported the migration to a new event pipeline, and pushed for naming and
+          property standards so the same event meant the same thing everywhere.</p>
+          <ul class="tags"><li>Mixpanel</li><li>Segment</li><li>Event design</li></ul>
+        </div>
+      </li>
+
+      <li class="entry" data-tags="ip integrations">
+        <div class="when">2021 – 2022</div>
+        <div class="what">
+          <h3>Insurance provider migration</h3>
+          <p>Implementation support for moving to a new insurance provider across the
+          dashboard and API: claim submission entry points, insurance cards and documents,
+          package selection, payment retry, and mapping provider state into our own
+          reporting.</p>
+          <ul class="tags"><li>Rails</li><li>React</li><li>Migration</li></ul>
+        </div>
+      </li>
+
+      <li class="entry" data-tags="analytics platform">
+        <div class="when">2021</div>
+        <div class="what">
+          <h3>Search ranking experiment</h3>
+          <p>Ran an A/B test on search sort order, then did the less common half of the
+          job: removed the experimentation vendor's calls from the hot path when they
+          proved a latency problem, and promoted the winning variant permanently.</p>
+          <ul class="tags"><li>Rails</li><li>Next.js</li><li>Optimizely</li><li>Performance</li></ul>
+        </div>
+      </li>
+
+      <li class="entry" data-tags="analytics">
+        <div class="when">2021</div>
+        <div class="what">
+          <h3>Listing funnel optimization</h3>
+          <p>Reworked the RV-details step of the owner listing flow — form validation,
+          experiment behavior, and the end-to-end coverage to keep it from regressing.</p>
+          <ul class="tags"><li>React</li><li>Cypress</li><li>Experimentation</li></ul>
+        </div>
+      </li>
+
+      <li class="entry" data-tags="platform">
+        <div class="when">2021</div>
+        <div class="what">
+          <h3>One-way rentals &amp; dynamic landing routes</h3>
+          <p>Route pages and validation for one-way rentals, plus dynamic
+          CMS-driven routes on the marketplace with the SEO constraints that came with
+          them.</p>
+          <ul class="tags"><li>Next.js</li><li>SEO</li><li>CMS</li></ul>
+        </div>
+      </li>
+
+    </ol>
+    <p class="empty" hidden>Nothing in that area — try another filter.</p>
+  </section>
+
+  <!-- ───────────────────────── experience ───────────────────────── -->
+  <section class="band" id="experience" aria-labelledby="exp-h">
+    <h2 id="exp-h" class="section-h"><span class="num">03</span> Experience</h2>
+
+    <article class="job">
+      <div class="job-when">2021 — Present</div>
+      <div class="job-what">
+        <h3>Software Engineer III <span class="at">· RVshare</span></h3>
+        <ul>
+          <li>Developed and maintained customer-facing features for a large online marketplace in Ruby on Rails and React.</li>
+          <li>Partnered with product managers and designers to scope, implement, and iterate on new product initiatives.</li>
+          <li>Implemented analytics and experimentation with Mixpanel and Optimizely to support data-driven product decisions.</li>
+          <li>Integrated third-party services including payments, insurance, tax, and identity verification providers.</li>
+          <li>Participated in technical design, code review, production support, and on-call rotations.</li>
+          <li>Delivered features end to end, from technical design through production deployment.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="job">
+      <div class="job-when">2019 — 2021</div>
+      <div class="job-what">
+        <h3>Applications Developer <span class="at">· Technifab Inc.</span></h3>
+        <ul>
+          <li>Designed, developed, and supported internal web applications in PHP, JavaScript, jQuery, and SQL Server to support manufacturing operations and long-term decision-making.</li>
+          <li>Worked directly with engineering, operations, quality, marketing, and customer service to gather requirements and deliver practical solutions.</li>
+          <li>Built a production data-collection system that tracked Boeing 787 window seals through barcode scans, captured defect locations, generated labels, and surfaced live manufacturing metrics.</li>
+          <li>Rebuilt a scrap metrics dashboard, cutting average load time from over 10 seconds to under one.</li>
+        </ul>
+      </div>
+    </article>
+
+    <p class="volunteer">Volunteer, GiveCamp Cleveland — 2019</p>
+  </section>
+
+  <!-- ───────────────────────── skills ───────────────────────── -->
+  <section id="skills" aria-labelledby="skills-h">
+    <h2 id="skills-h" class="section-h"><span class="num">04</span> Tools</h2>
+    <dl class="skills">
+      <div><dt>Languages</dt><dd>Ruby · JavaScript · SQL</dd></div>
+      <div><dt>Frameworks</dt><dd>Ruby on Rails · React · Next.js</dd></div>
+      <div><dt>Testing</dt><dd>RSpec · Cypress</dd></div>
+      <div><dt>Data &amp; background</dt><dd>MySQL · Sidekiq</dd></div>
+      <div><dt>Product analytics</dt><dd>Mixpanel · Segment · Optimizely</dd></div>
+      <div><dt>Tools</dt><dd>Git · GitHub</dd></div>
+    </dl>
+  </section>
+
+  <!-- ───────────────────────── contact ───────────────────────── -->
+  <section class="band contact" id="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h" class="section-h"><span class="num">05</span> Contact</h2>
+    <p class="lede">Open to conversations about backend and full-stack work — especially
+    where the domain is genuinely complicated.</p>
+    <ul class="links">
+      <li><a href="mailto:djthomson88@gmail.com">djthomson88@gmail.com</a></li>
+      <li><a href="https://www.linkedin.com/in/dylanjthomson/" rel="me noopener">linkedin.com/in/dylanjthomson</a></li>
+      <li><a href="https://github.com/dylan-thomson" rel="me noopener">github.com/dylan-thomson</a></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer>
+  <p>Dylan Thomson · Sheffield Lake, Ohio</p>
+  <p class="colophon">Hand-written HTML and CSS. No frameworks, no trackers.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
