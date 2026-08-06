@@ -31,7 +31,6 @@
 <header class="topbar">
   <a class="mark" href="#top"><span>DT</span></a>
   <nav>
-    <a href="#agents">Agents</a>
     <a href="#work">Work</a>
     <a href="#experience">Experience</a>
     <a href="#skills">Skills</a>
@@ -99,46 +98,27 @@
         flows that move money: Mixpanel events, RSpec, Cypress, release checklists, staged
         rollouts, and post-launch monitoring.</p>
       </article>
+      <article class="card">
+        <h3>Agents in the loop</h3>
+        <p>I build deterministic, LLM-driven tooling around Claude Code to automate parts of
+        my own workflow, including a pipeline that carries a work item from card to pull
+        request to deploy to CI without a human driving each hop.</p>
+      </article>
     </div>
-  </section>
-
-  <!-- ───────────────────────── agent tooling ───────────────────────── -->
-  <section id="agents" aria-labelledby="agents-h">
-    <h2 id="agents-h" class="section-h"><span class="num">02</span> Building with agents</h2>
-
-    <p class="lede">
-      A lot of my time lately goes into building with and around Claude Code: deterministic,
-      LLM-driven applications that automate parts of my own engineering workflow.
-    </p>
 
     <div class="principle">
-      <p>The organizing idea is that the model does the part that needs judgment and nothing
-      else. Sequencing, state, and retries stay in ordinary code, where they can be tested.
-      State is event-sourced and owned by the application rather than held in a context
-      window, so a run is inspectable and resumable after the fact, and the same input
-      produces the same path through the system every time.</p>
+      <p>The organizing idea behind that last one is that the model does the part which
+      needs judgment and nothing else. Sequencing, state, and retries stay in ordinary code,
+      where they can be tested. State is event-sourced and owned by the application rather
+      than held in a context window, so a run is inspectable and resumable after the fact,
+      and a failure lands as an event you can read instead of something you have to re-run
+      to understand.</p>
     </div>
-
-    <ol class="timeline">
-      <li class="entry">
-        <div class="when">2025 – 2026</div>
-        <div class="what">
-          <h3>Autonomous delivery pipeline</h3>
-          <p class="role">Design and implementation</p>
-          <p>Takes a work item from card to pull request to deploy to CI without a human
-          driving each hop. An event-sourced state machine owns the transitions and decides
-          what happens next; the agent works inside a single step and never gets to choose
-          the step after it. Failures land as events, which makes a stuck run something you
-          can read rather than something you have to re-run to understand.</p>
-          <ul class="tags"><li>Claude Code</li><li>Event sourcing</li><li>CI/CD</li><li>Agent orchestration</li></ul>
-        </div>
-      </li>
-    </ol>
   </section>
 
   <!-- ───────────────────────── work ───────────────────────── -->
-  <section class="band" id="work" aria-labelledby="work-h">
-    <h2 id="work-h" class="section-h"><span class="num">03</span> Selected work</h2>
+  <section id="work" aria-labelledby="work-h">
+    <h2 id="work-h" class="section-h"><span class="num">02</span> Selected work</h2>
     <p class="section-note">
       Seven projects from five years at one peer-to-peer marketplace: the ones I'd want to
       talk through. Vendor names and internal project codenames are generalized, and links
@@ -254,8 +234,8 @@
   </section>
 
   <!-- ───────────────────────── experience ───────────────────────── -->
-  <section id="experience" aria-labelledby="exp-h">
-    <h2 id="exp-h" class="section-h"><span class="num">04</span> Experience</h2>
+  <section class="band" id="experience" aria-labelledby="exp-h">
+    <h2 id="exp-h" class="section-h"><span class="num">03</span> Experience</h2>
 
     <article class="job">
       <div class="job-when">2021 – Present</div>
@@ -289,8 +269,8 @@
   </section>
 
   <!-- ───────────────────────── skills ───────────────────────── -->
-  <section class="band" id="skills" aria-labelledby="skills-h">
-    <h2 id="skills-h" class="section-h"><span class="num">05</span> Tools</h2>
+  <section id="skills" aria-labelledby="skills-h">
+    <h2 id="skills-h" class="section-h"><span class="num">04</span> Tools</h2>
     <dl class="skills">
       <div><dt>Languages</dt><dd>Ruby · JavaScript · SQL</dd></div>
       <div><dt>Frameworks</dt><dd>Ruby on Rails · React · Next.js</dd></div>
@@ -303,8 +283,8 @@
   </section>
 
   <!-- ───────────────────────── contact ───────────────────────── -->
-  <section class="contact" id="contact" aria-labelledby="contact-h">
-    <h2 id="contact-h" class="section-h"><span class="num">06</span> Contact</h2>
+  <section class="band contact" id="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h" class="section-h"><span class="num">05</span> Contact</h2>
     <p class="lede">Open to conversations about backend and full-stack work, especially
     where the domain is genuinely complicated.</p>
     <ul class="links">

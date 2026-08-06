@@ -246,16 +246,19 @@ main > section { padding-block: clamp(3.5rem, 8vw, 6.5rem); }
 
 /* ── theme cards ─────────────────────────────────────────────────────────── */
 
+/* Individually bordered rather than a seamless 1px-gap lattice: the card count
+   is odd, and a lattice leaves a solid --line hole where the row runs out. */
 .grid-4 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 1px;
-  background: var(--line);
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1rem;
+}
+.card {
+  background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--r);
-  overflow: hidden;
+  padding: 1.6rem 1.5rem;
 }
-.card { background: var(--bg-2); padding: 1.6rem 1.5rem; }
 .card h3 {
   font-size: 1rem;
   margin-bottom: .6rem;
@@ -270,15 +273,13 @@ main > section { padding-block: clamp(3.5rem, 8vw, 6.5rem); }
 }
 .card p { margin: 0; font-size: .9rem; color: var(--ink-2); }
 
-/* ── agent tooling ───────────────────────────────────────────────────────── */
-
-#agents .lede { margin-bottom: 2rem; }
+/* ── pull-quote ──────────────────────────────────────────────────────────── */
 
 .principle {
   max-width: var(--measure);
   border-left: 2px solid var(--accent);
   padding: .1rem 0 .1rem 1.5rem;
-  margin-bottom: 3rem;
+  margin-top: 2.5rem;
 }
 .principle p { margin: 0; font-size: .95rem; color: var(--ink-2); }
 
