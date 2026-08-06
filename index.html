@@ -105,15 +105,6 @@
         request to deploy to CI without a human driving each hop.</p>
       </article>
     </div>
-
-    <div class="principle">
-      <p>The organizing idea behind that last one is that the model does the part which
-      needs judgment and nothing else. Sequencing, state, and retries stay in ordinary code,
-      where they can be tested. State is event-sourced and owned by the application rather
-      than held in a context window, so a run is inspectable and resumable after the fact,
-      and a failure lands as an event you can read instead of something you have to re-run
-      to understand.</p>
-    </div>
   </section>
 
   <!-- ───────────────────────── work ───────────────────────── -->
@@ -131,12 +122,10 @@
         <div class="when">2026</div>
         <div class="what">
           <h3>Installment payments, phase 2</h3>
-          <p class="role">Technical design → implementation</p>
-          <p>Pushed a pay-over-time option deeper into the booking flow: a new estimate
-          field and calculator on the API, shared SDK helpers so every surface agreed on
-          the math, the quote-builder UI, error handling, an admin indicator on
-          reservations, and Cypress coverage over the paths that touch money.</p>
-          <ul class="tags"><li>Rails</li><li>React</li><li>Payments</li><li>Cypress</li></ul>
+          <p>Integrated a third-party pay-over-time component into the quote builder page,
+          so renters could see and choose an installment plan at the point where they get a
+          price.</p>
+          <ul class="tags"><li>React</li><li>Payments</li><li>Third-party integration</li></ul>
         </div>
       </li>
 
@@ -222,15 +211,6 @@
 
     </ol>
 
-    <div class="also">
-      <h3>Also shipped</h3>
-      <p>Park models, a new vehicle category across the stack (2024) · a Cypress and
-      end-to-end test program across the insurance flows (2023–2025) · claims integration
-      (2023) · search ranking and quote experiments (2021–2023) · insurance provider
-      migration (2021–2022) · one-way rentals and dynamic landing routes (2021) · support
-      chatbot integration (2024) · technical design work on promo codes and calendar blocks
-      (2024).</p>
-    </div>
   </section>
 
   <!-- ───────────────────────── experience ───────────────────────── -->

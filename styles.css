@@ -273,16 +273,6 @@ main > section { padding-block: clamp(3.5rem, 8vw, 6.5rem); }
 }
 .card p { margin: 0; font-size: .9rem; color: var(--ink-2); }
 
-/* ── pull-quote ──────────────────────────────────────────────────────────── */
-
-.principle {
-  max-width: var(--measure);
-  border-left: 2px solid var(--accent);
-  padding: .1rem 0 .1rem 1.5rem;
-  margin-top: 2.5rem;
-}
-.principle p { margin: 0; font-size: .95rem; color: var(--ink-2); }
-
 /* ── timeline ────────────────────────────────────────────────────────────── */
 
 .timeline { list-style: none; margin: 0; padding: 0; }
@@ -344,23 +334,6 @@ main > section { padding-block: clamp(3.5rem, 8vw, 6.5rem); }
   border: 1px solid var(--line);
   border-radius: 4px;
   padding: .15rem .45rem;
-}
-
-/* the long tail, compressed to a single paragraph */
-.also { margin-top: 2.5rem; }
-.also h3 {
-  font-family: var(--mono);
-  font-size: .7rem;
-  letter-spacing: .14em;
-  text-transform: uppercase;
-  color: var(--ink-3);
-  margin-bottom: .6rem;
-}
-.also p {
-  max-width: var(--measure);
-  margin: 0;
-  font-size: .88rem;
-  color: var(--ink-2);
 }
 
 /* ── experience ──────────────────────────────────────────────────────────── */

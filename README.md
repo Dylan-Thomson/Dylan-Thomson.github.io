@@ -52,8 +52,8 @@ you add or reorder a section.
 
 - **No em dashes.** Rewrite the sentence instead of substituting a different dash.
 - En dashes are used only for year ranges (`2025 – 2026`).
-- Keep the work list short. It is a portfolio, not a changelog; the long tail lives in
-  the "Also shipped" paragraph.
+- Keep the work list short. It is a portfolio, not a changelog. Anything you would not
+  want to be asked about in an interview does not belong on the page at all.
 
 ## A note on content
 
