@@ -5,7 +5,7 @@ Personal portfolio. Three static files, no build step, no dependencies, no track
 ```
 index.html   content
 styles.css   all styling (dark + light, print stylesheet)
-script.js    theme toggle, work filters, scroll reveal
+script.js    theme toggle, scroll reveal
 .nojekyll    tell GitHub Pages to serve the files as-is
 ```
 
@@ -19,7 +19,7 @@ Then open <http://localhost:4000>.
 
 ## Deploying to GitHub Pages
 
-**Option A — user site at `https://<username>.github.io`** (recommended)
+**Option A, user site at `https://<username>.github.io`** (recommended)
 
 Create a public repo named exactly `<username>.github.io`, then:
 
@@ -27,9 +27,9 @@ Create a public repo named exactly `<username>.github.io`, then:
 git remote add origin git@github.com:<username>/<username>.github.io.git && git push -u origin main
 ```
 
-Pages turns on automatically for user sites. First build takes a minute or two.
+Pages turns on automatically for user sites. The first build takes a minute or two.
 
-**Option B — project site at `https://<username>.github.io/portfolio`**
+**Option B, project site at `https://<username>.github.io/portfolio`**
 
 Push to any public repo, then in the repo's **Settings → Pages**, set
 *Source* to "Deploy from a branch", branch `main`, folder `/ (root)`.
@@ -39,16 +39,21 @@ Push to any public repo, then in the repo's **Settings → Pages**, set
 Add a `CNAME` file containing the bare domain (e.g. `dylanthomson.dev`), point a
 `CNAME` DNS record at `<username>.github.io`, and enable *Enforce HTTPS* in Settings → Pages.
 
-## Editing the work timeline
+## Editing
 
-Each project is one `<li class="entry">` in `index.html`. Two attributes drive behavior:
+Each project is one `<li class="entry">` inside an `<ol class="timeline">`. Plain HTML,
+no attributes needed beyond the markup itself. Two timelines exist: one in `#agents`
+and one in `#work`. Entries are ordered newest first.
 
-- `data-tags` — space-separated; must match a `data-filter` value on a `.chip`
-  (`ip`, `analytics`, `platform`, `integrations`, `testing`).
-- `data-featured="true"` — marks the accent dot on the timeline; pair it with the
-  `<span class="badge">Featured</span>` inside the heading.
+Section numbers (`<span class="num">03</span>`) are hand-written, so renumber them if
+you add or reorder a section.
 
-Entries are listed newest-first and are otherwise plain HTML.
+## House style
+
+- **No em dashes.** Rewrite the sentence instead of substituting a different dash.
+- En dashes are used only for year ranges (`2025 – 2026`).
+- Keep the work list short. It is a portfolio, not a changelog; the long tail lives in
+  the "Also shipped" paragraph.
 
 ## A note on content
 

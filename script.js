@@ -1,4 +1,4 @@
-/* Dylan Thomson — portfolio behavior. Three small things: theme, filters, reveal. */
+/* Dylan Thomson, portfolio behavior. Two small things: theme and scroll reveal. */
 (() => {
   'use strict';
 
@@ -21,32 +21,6 @@
     const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
     applyTheme(next);
     try { localStorage.setItem('theme', next); } catch { /* private mode */ }
-  });
-
-  /* ── work filters ──────────────────────────────────────────────────────── */
-  const chips = [...document.querySelectorAll('.chip')];
-  const entries = [...document.querySelectorAll('.entry')];
-  const empty = document.querySelector('.empty');
-
-  chips.forEach((chip) => {
-    chip.addEventListener('click', () => {
-      const filter = chip.dataset.filter;
-
-      chips.forEach((c) => {
-        const on = c === chip;
-        c.classList.toggle('is-on', on);
-        c.setAttribute('aria-pressed', String(on));
-      });
-
-      let shown = 0;
-      entries.forEach((entry) => {
-        const match = filter === 'all' || entry.dataset.tags.split(' ').includes(filter);
-        entry.classList.toggle('is-hidden', !match);
-        if (match) shown++;
-      });
-
-      empty.hidden = shown > 0;
-    });
   });
 
   /* ── reveal on scroll ──────────────────────────────────────────────────── */
